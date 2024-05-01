@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 import { BiRadioCircle } from "react-icons/bi";
 
@@ -8,8 +10,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Sheet } from "@/components/Sheet";
+import { Card } from "@/app/types";
 
-export default function TaskCard(props: any) {
+export default function TaskCard({ data: { content, description, labels } }: { data: Card }) {
   return (
     <Sheet.Root>
       <Sheet.Trigger>
@@ -18,50 +21,11 @@ export default function TaskCard(props: any) {
             <BiRadioCircle color="orange" className="red" />
           </div>
           <div className="flex flex-wrap px-3 pb-3">
-            <p className="text-wrap text-sm text-gray-500 dark:text-gray-400 mt-2">
-              Create a fresh and modern design for the company homepage. Se more details clicking here...
-            </p>
+            <p className="text-wrap text-sm text-gray-500 dark:text-gray-400 mt-2">{content}</p>
           </div>
         </div>
       </Sheet.Trigger>
-      <Sheet.Content>
-        <div>KJBSHJKBJHADBKJHSDBLJHB</div>
-      </Sheet.Content>
+      <Sheet.Content>{description}</Sheet.Content>
     </Sheet.Root>
   );
 }
-
-// function SheetCard() {
-//   return (
-//     <Sheet>
-//       <SheetTrigger asChild>
-//         <Button variant="outline">Open</Button>
-//       </SheetTrigger>
-//       <SheetContent>
-//         <SheetHeader>
-//           <SheetTitle>Edit profile</SheetTitle>
-//           <SheetDescription>Make changes to your profile here. Click save when you're done.</SheetDescription>
-//         </SheetHeader>
-//         <div className="grid gap-4 py-4">
-//           <div className="grid grid-cols-4 items-center gap-4">
-//             <Label htmlFor="name" className="text-right">
-//               Name
-//             </Label>
-//             <Input id="name" value="Pedro Duarte" className="col-span-3" />
-//           </div>
-//           <div className="grid grid-cols-4 items-center gap-4">
-//             <Label htmlFor="username" className="text-right">
-//               Username
-//             </Label>
-//             <Input id="username" value="@peduarte" className="col-span-3" />
-//           </div>
-//         </div>
-//         <SheetFooter>
-//           <SheetClose asChild>
-//             <Button type="submit">Save changes</Button>
-//           </SheetClose>
-//         </SheetFooter>
-//       </SheetContent>
-//     </Sheet>
-//   );
-// }

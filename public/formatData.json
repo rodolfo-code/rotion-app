@@ -1,0 +1,1641 @@
+{
+  "result": {
+      "type": "reducer",
+      "reducerResults": {
+          "board_columns": {
+              "type": "groups",
+              "results": [
+                  {
+                      "value": {
+                          "type": "select",
+                          "value": "Form J"
+                      },
+                      "total": 1
+                  },
+                  {
+                      "value": {
+                          "type": "select",
+                          "value": "To Do"
+                      },
+                      "total": 4
+                  },
+                  {
+                      "value": {
+                          "type": "select",
+                          "value": "Doing"
+                      },
+                      "total": 1
+                  },
+                  {
+                      "value": {
+                          "type": "select",
+                          "value": "Done 🙌"
+                      },
+                      "total": 30
+                  },
+                  {
+                      "value": {
+                          "type": "select",
+                          "value": "Ted"
+                      },
+                      "total": 1
+                  },
+                  {
+                      "value": {
+                          "type": "select",
+                          "value": "TUD"
+                      },
+                      "total": 2
+                  },
+                  {
+                      "value": {
+                          "type": "select"
+                      },
+                      "total": 2
+                  }
+              ],
+              "total": 7
+          },
+          "board:select:Form J": {
+              "type": "aggregation",
+              "aggregationResult": {
+                  "type": "number",
+                  "value": 1
+              }
+          },
+          "board:select:To Do": {
+              "type": "aggregation",
+              "aggregationResult": {
+                  "type": "number",
+                  "value": 4
+              }
+          },
+          "board:select:Doing": {
+              "type": "aggregation",
+              "aggregationResult": {
+                  "type": "number",
+                  "value": 1
+              }
+          },
+          "board:select:Done 🙌": {
+              "type": "aggregation",
+              "aggregationResult": {
+                  "type": "number",
+                  "value": 30
+              }
+          },
+          "board:select:Ted": {
+              "type": "aggregation",
+              "aggregationResult": {
+                  "type": "number",
+                  "value": 1
+              }
+          },
+          "board:select:TUD": {
+              "type": "aggregation",
+              "aggregationResult": {
+                  "type": "number",
+                  "value": 2
+              }
+          },
+          "results:select:Form J": {
+              "type": "results",
+              "blockIds": [
+                  "af9807fb-fe0c-4b2d-a853-66b1294bea1a"
+              ],
+              "hasMore": false
+          },
+          "results:select:To Do": {
+              "type": "results",
+              "blockIds": [
+                  "c99f76b7-a2ad-40be-9955-06cd4b71f8ed",
+                  "2316e6ab-8e92-406b-808d-0fdf7b06b6f9",
+                  "76c70773-ce73-4c50-b6a4-583305f67164",
+                  "894447c8-f504-4cee-be2a-2ba9a0f61f0c"
+              ],
+              "hasMore": false
+          },
+          "results:select:Doing": {
+              "type": "results",
+              "blockIds": [
+                  "f5ee56a1-f48d-49bb-b0d0-b9c4ff544307"
+              ],
+              "hasMore": false
+          },
+          "results:select:Done 🙌": {
+              "type": "results",
+              "blockIds": [
+                  "0f5ff18a-80ab-40d9-9659-131e6334123b",
+                  "152bfb3d-60e7-4655-a480-5ff0d0e0c8bc",
+                  "66dfa970-b00f-43da-89e4-60faed66f6e5",
+                  "73d9c2cc-75a7-43aa-895b-415af50bb8da",
+                  "cbff981b-27da-42f3-b1a8-46495e362a2c",
+                  "3a087cb2-e388-4c93-abac-8d2c35864cdb",
+                  "b8846d4f-a14b-4ad3-87dd-e25cff76b781",
+                  "093b3a48-75e4-4ec3-9f80-37f7c9bcfe20",
+                  "23549f5b-6c6a-4b60-bb12-0523a9faaf19",
+                  "cb19eabd-42c5-41bb-8fd7-62b854a4e42e",
+                  "d8276896-018f-453d-8223-2cd5777b171d",
+                  "6cdcfdb2-62d0-48d2-a315-428e6a6ad7c9",
+                  "33e706e8-a32d-421a-aa6a-4e3de0e60815",
+                  "10af1bf2-fbba-447e-9ffc-547977cadc93",
+                  "fbbf99ea-cdfb-4561-8771-dd359135663b",
+                  "59eb8e85-5ac3-4dc2-a584-4bedea71b1ea",
+                  "c25d17d3-e569-4ff7-955a-51a5c84b035b",
+                  "dfb4a310-02c7-4f12-9fde-76c0a4137655",
+                  "07c5c9ec-c55f-4805-80ab-86bb511c31b1",
+                  "a75936b1-1cde-4a5a-9b62-69a6a6e632d2"
+              ],
+              "hasMore": true
+          },
+          "results:select:Ted": {
+              "type": "results",
+              "blockIds": [
+                  "5c3161f7-aec4-42ec-ae88-0f953025024f"
+              ],
+              "hasMore": false
+          },
+          "results:select:TUD": {
+              "type": "results",
+              "blockIds": [
+                  "ea7e6fc4-38c2-48bc-a81d-dfc3a3a6c6c6",
+                  "035b8f26-aa16-484e-9056-d0f044561635"
+              ],
+              "hasMore": false
+          },
+          "board:select:uncategorized": {
+              "type": "aggregation",
+              "aggregationResult": {
+                  "type": "number",
+                  "value": 2
+              }
+          }
+      },
+      "sizeHint": 41
+  },
+  "recordMap": {
+      "__version__": 3,
+      "block": {
+          "af9807fb-fe0c-4b2d-a853-66b1294bea1a": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "af9807fb-fe0c-4b2d-a853-66b1294bea1a",
+                      "version": 4,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Form J"
+                              ]
+                          ]
+                      },
+                      "created_time": 1714439575879,
+                      "last_edited_time": 1714439575879,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "2b825b4b-6e0e-4d4a-94ab-4c24d79a3810": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "2b825b4b-6e0e-4d4a-94ab-4c24d79a3810",
+                      "version": 77,
+                      "type": "collection_view_page",
+                      "view_ids": [
+                          "ce5a0eb0-64f0-4773-8d2f-1c4192c6b861",
+                          "26fd1415-7cd3-4f04-a2d4-e2aafbf3cd13"
+                      ],
+                      "collection_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "format": {
+                          "block_locked": false,
+                          "block_locked_by": "d0a8cba1-b998-46a3-bcd1-0efb420410b1",
+                          "collection_pointer": {
+                              "id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                              "table": "collection",
+                              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                          },
+                          "copied_from_pointer": {
+                              "id": "ba43b46e-4ad3-47f7-95f0-58a3ba01476f",
+                              "table": "block",
+                              "spaceId": "1f88cc90-92fd-4ce4-bfcd-25daec2ffbbe"
+                          }
+                      },
+                      "permissions": [
+                          {
+                              "role": "editor",
+                              "type": "user_permission",
+                              "user_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6"
+                          }
+                      ],
+                      "created_by": "6ef08d7f-695a-4ded-9aad-108a7411a508",
+                      "created_time": 1644166691305,
+                      "last_edited_by": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_time": 1714439575879,
+                      "parent_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+                      "parent_table": "space",
+                      "alive": true,
+                      "copied_from": "ba43b46e-4ad3-47f7-95f0-58a3ba01476f",
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "c99f76b7-a2ad-40be-9955-06cd4b71f8ed": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "c99f76b7-a2ad-40be-9955-06cd4b71f8ed",
+                      "version": 211,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "To Do"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Verificar status para serem todfos iguais no momento de filtrar nas grids"
+                              ]
+                          ]
+                      },
+                      "created_time": 1713985995757,
+                      "last_edited_time": 1714524941566,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "2316e6ab-8e92-406b-808d-0fdf7b06b6f9": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "2316e6ab-8e92-406b-808d-0fdf7b06b6f9",
+                      "version": 188,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "To Do"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Incluir opçao de apoio no formulario de fornecedores (semelhante ao COI)"
+                              ]
+                          ]
+                      },
+                      "created_time": 1713985965739,
+                      "last_edited_time": 1714427476730,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "76c70773-ce73-4c50-b6a4-583305f67164": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "76c70773-ce73-4c50-b6a4-583305f67164",
+                      "version": 74,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "To Do"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Modificar input de adicionar paises"
+                              ]
+                          ]
+                      },
+                      "created_time": 1713808834494,
+                      "last_edited_time": 1713808841675,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "894447c8-f504-4cee-be2a-2ba9a0f61f0c": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "894447c8-f504-4cee-be2a-2ba9a0f61f0c",
+                      "version": 224,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "To Do"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Verificar como usuario conseguiu enviar solicitaçao sem preencher pergunta 3 Subcontract"
+                              ]
+                          ]
+                      },
+                      "created_time": 1713985938240,
+                      "last_edited_time": 1713985964915,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "f5ee56a1-f48d-49bb-b0d0-b9c4ff544307": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "f5ee56a1-f48d-49bb-b0d0-b9c4ff544307",
+                      "version": 54,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Doing"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "FAZER O DEPLOY EM HOMOLOG"
+                              ]
+                          ]
+                      },
+                      "created_time": 1713995828493,
+                      "last_edited_time": 1713995833864,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "0f5ff18a-80ab-40d9-9659-131e6334123b": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "0f5ff18a-80ab-40d9-9659-131e6334123b",
+                      "version": 122,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Verificar preenchimento da razao social no fornecedores"
+                              ]
+                          ]
+                      },
+                      "created_time": 1713986031069,
+                      "last_edited_time": 1713987665327,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "152bfb3d-60e7-4655-a480-5ff0d0e0c8bc": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "152bfb3d-60e7-4655-a480-5ff0d0e0c8bc",
+                      "version": 14,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "O campo quantidade de empregados está populado com zero. Não popular."
+                              ]
+                          ]
+                      },
+                      "created_time": 1713808911032,
+                      "last_edited_time": 1713809203308,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "66dfa970-b00f-43da-89e4-60faed66f6e5": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "66dfa970-b00f-43da-89e4-60faed66f6e5",
+                      "version": 12,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Países em que opera – quando usuário escolher um país e quiser adicionar outro, sempre limpar campo depois de adicionado.  "
+                              ]
+                          ]
+                      },
+                      "created_time": 1712675117891,
+                      "last_edited_time": 1713808833339,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "73d9c2cc-75a7-43aa-895b-415af50bb8da": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "73d9c2cc-75a7-43aa-895b-415af50bb8da",
+                      "version": 12,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Razão social – validar razão social se CNPJ. "
+                              ]
+                          ]
+                      },
+                      "created_time": 1712675083783,
+                      "last_edited_time": 1713272407176,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "cbff981b-27da-42f3-b1a8-46495e362a2c": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "cbff981b-27da-42f3-b1a8-46495e362a2c",
+                      "version": 124,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Ajustar tamanhos de inputs para ficarem no mesmo padrao"
+                              ]
+                          ]
+                      },
+                      "created_time": 1712772167596,
+                      "last_edited_time": 1713263170705,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "3a087cb2-e388-4c93-abac-8d2c35864cdb": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "3a087cb2-e388-4c93-abac-8d2c35864cdb",
+                      "version": 110,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Incluir seleçao de moeda no campo de valores"
+                              ]
+                          ]
+                      },
+                      "created_time": 1712772104424,
+                      "last_edited_time": 1713263166241,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "b8846d4f-a14b-4ad3-87dd-e25cff76b781": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "b8846d4f-a14b-4ad3-87dd-e25cff76b781",
+                      "version": 204,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Desenvolver logica de permitir visualizaçao da request quando cancelada"
+                              ]
+                          ]
+                      },
+                      "created_time": 1712770517955,
+                      "last_edited_time": 1713263163617,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "093b3a48-75e4-4ec3-9f80-37f7c9bcfe20": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "093b3a48-75e4-4ec3-9f80-37f7c9bcfe20",
+                      "version": 48,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Incluir Botao deletar"
+                              ]
+                          ]
+                      },
+                      "created_time": 1712770507480,
+                      "last_edited_time": 1713263161441,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "23549f5b-6c6a-4b60-bb12-0523a9faaf19": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "23549f5b-6c6a-4b60-bb12-0523a9faaf19",
+                      "version": 46,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Criar metodo Deletar"
+                              ]
+                          ]
+                      },
+                      "created_time": 1712770498409,
+                      "last_edited_time": 1713263159162,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "cb19eabd-42c5-41bb-8fd7-62b854a4e42e": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "cb19eabd-42c5-41bb-8fd7-62b854a4e42e",
+                      "version": 14,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Em Informações Adicionais falta a possibilidade de inserir anexos.  "
+                              ]
+                          ]
+                      },
+                      "created_time": 1712675222675,
+                      "last_edited_time": 1713263143240,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "d8276896-018f-453d-8223-2cd5777b171d": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "d8276896-018f-453d-8223-2cd5777b171d",
+                      "version": 94,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Tratar RELATIONSHIP para incluir no formData"
+                              ]
+                          ]
+                      },
+                      "created_time": 1712918460268,
+                      "last_edited_time": 1713263140178,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "6cdcfdb2-62d0-48d2-a315-428e6a6ad7c9": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "6cdcfdb2-62d0-48d2-a315-428e6a6ad7c9",
+                      "version": 46,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Criar tabela de parentesco no banco"
+                              ]
+                          ]
+                      },
+                      "created_time": 1712844999817,
+                      "last_edited_time": 1712855372433,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "33e706e8-a32d-421a-aa6a-4e3de0e60815": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "33e706e8-a32d-421a-aa6a-4e3de0e60815",
+                      "version": 134,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Verificar se tabela de Organization types aceita ops novos dados"
+                              ]
+                          ]
+                      },
+                      "created_time": 1712837686869,
+                      "last_edited_time": 1712844513909,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "10af1bf2-fbba-447e-9ffc-547977cadc93": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "10af1bf2-fbba-447e-9ffc-547977cadc93",
+                      "version": 222,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Adicionar mais uma coluna Pais (endereço) na tabela do formulario Fornecedores"
+                              ]
+                          ]
+                      },
+                      "created_time": 1712770731044,
+                      "last_edited_time": 1712841654018,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "fbbf99ea-cdfb-4561-8771-dd359135663b": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "fbbf99ea-cdfb-4561-8771-dd359135663b",
+                      "version": 34,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Tipo de Organização – só permitir que o solicitante marque uma opção. "
+                              ]
+                          ]
+                      },
+                      "content": [
+                          "e28dda21-7bf9-4725-91b7-75bc8d9504ce",
+                          "b2ba0e71-c034-4bc7-9a0a-cbb1b1da9f79",
+                          "ed9a6594-7923-4646-9b81-bbf97c7955f6",
+                          "451d7877-4bec-4bb4-8618-ff52aa75cfda"
+                      ],
+                      "format": {
+                          "block_locked": false,
+                          "block_locked_by": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                          "copied_from_pointer": {
+                              "id": "7c10b5c9-be48-4e23-a30d-847888f66eaa",
+                              "table": "block",
+                              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                          }
+                      },
+                      "created_time": 1712675111736,
+                      "last_edited_time": 1712837678171,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "copied_from": "7c10b5c9-be48-4e23-a30d-847888f66eaa",
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "59eb8e85-5ac3-4dc2-a584-4bedea71b1ea": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "59eb8e85-5ac3-4dc2-a584-4bedea71b1ea",
+                      "version": 10,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Faltaram as tools tips dos campos segundo Excel enviado."
+                              ]
+                          ]
+                      },
+                      "created_time": 1712675211321,
+                      "last_edited_time": 1712831852419,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "c25d17d3-e569-4ff7-955a-51a5c84b035b": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "c25d17d3-e569-4ff7-955a-51a5c84b035b",
+                      "version": 8,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Relacionamento: opção de adicionar mais de um caso."
+                              ]
+                          ]
+                      },
+                      "created_time": 1712675191658,
+                      "last_edited_time": 1712793697749,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "dfb4a310-02c7-4f12-9fde-76c0a4137655": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "dfb4a310-02c7-4f12-9fde-76c0a4137655",
+                      "version": 10,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "O botão de enviar solicitação não está funcionando.  "
+                              ]
+                          ]
+                      },
+                      "created_time": 1712675258706,
+                      "last_edited_time": 1712767567075,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "07c5c9ec-c55f-4805-80ab-86bb511c31b1": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "07c5c9ec-c55f-4805-80ab-86bb511c31b1",
+                      "version": 8,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Campo País Endereço – por que não está puxando da tabela de países? "
+                              ]
+                          ]
+                      },
+                      "created_time": 1712675129754,
+                      "last_edited_time": 1712779989478,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "a75936b1-1cde-4a5a-9b62-69a6a6e632d2": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "a75936b1-1cde-4a5a-9b62-69a6a6e632d2",
+                      "version": 26,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Done 🙌"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Endereço – é possível realizar o preenchimento automático do endereço pelo código postal quando o país for BR? "
+                              ]
+                          ]
+                      },
+                      "content": [
+                          "9fa5c54a-35b0-4369-a5c9-4a8ac06713f5",
+                          "3a0828a4-62a5-4998-bb62-c472b40f4280",
+                          "7a068739-f8f4-46ba-9689-e2264ea28513"
+                      ],
+                      "format": {
+                          "block_locked": false,
+                          "block_locked_by": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                          "copied_from_pointer": {
+                              "id": "7c10b5c9-be48-4e23-a30d-847888f66eaa",
+                              "table": "block",
+                              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                          }
+                      },
+                      "created_time": 1712675123568,
+                      "last_edited_time": 1712776704737,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "copied_from": "7c10b5c9-be48-4e23-a30d-847888f66eaa",
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "e28dda21-7bf9-4725-91b7-75bc8d9504ce": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "e28dda21-7bf9-4725-91b7-75bc8d9504ce",
+                      "version": 1,
+                      "type": "header",
+                      "properties": {
+                          "title": [
+                              [
+                                  "To Do"
+                              ]
+                          ]
+                      },
+                      "format": {
+                          "copied_from_pointer": {
+                              "id": "d0c83cae-76f5-4765-ac54-9aeff33e2f84",
+                              "table": "block",
+                              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                          }
+                      },
+                      "created_by": "e0d8983d-9b38-4f83-889d-7d4fc44d4f62",
+                      "created_time": 1712770657364,
+                      "last_edited_by": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_time": 1712770657364,
+                      "parent_id": "fbbf99ea-cdfb-4561-8771-dd359135663b",
+                      "parent_table": "block",
+                      "alive": true,
+                      "copied_from": "d0c83cae-76f5-4765-ac54-9aeff33e2f84",
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "b2ba0e71-c034-4bc7-9a0a-cbb1b1da9f79": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "b2ba0e71-c034-4bc7-9a0a-cbb1b1da9f79",
+                      "version": 141,
+                      "type": "to_do",
+                      "properties": {
+                          "title": [
+                              [
+                                  "...Verificar como é salvo no banco essas informaçoes e modificar tabela"
+                              ]
+                          ]
+                      },
+                      "format": {
+                          "copied_from_pointer": {
+                              "id": "5bb9623d-6b79-495c-ae0a-f4e2fd659324",
+                              "table": "block",
+                              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                          }
+                      },
+                      "created_by": "bd3552d4-2e14-448e-b60d-8d0fe921a4ae",
+                      "created_time": 1712770657364,
+                      "last_edited_by": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_time": 1712770663933,
+                      "parent_id": "fbbf99ea-cdfb-4561-8771-dd359135663b",
+                      "parent_table": "block",
+                      "alive": true,
+                      "copied_from": "5bb9623d-6b79-495c-ae0a-f4e2fd659324",
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "ed9a6594-7923-4646-9b81-bbf97c7955f6": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "ed9a6594-7923-4646-9b81-bbf97c7955f6",
+                      "version": 67,
+                      "type": "to_do",
+                      "properties": {
+                          "title": [
+                              [
+                                  "...Adicionar nova opçao (EIRELI)"
+                              ]
+                          ]
+                      },
+                      "format": {
+                          "copied_from_pointer": {
+                              "id": "938ef5b5-699e-4ed2-87cc-e4bb6d2cae95",
+                              "table": "block",
+                              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                          }
+                      },
+                      "created_by": "09bf218a-16a3-4fba-b398-46b75242a1fe",
+                      "created_time": 1712770657364,
+                      "last_edited_by": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_time": 1712770697861,
+                      "parent_id": "fbbf99ea-cdfb-4561-8771-dd359135663b",
+                      "parent_table": "block",
+                      "alive": true,
+                      "copied_from": "938ef5b5-699e-4ed2-87cc-e4bb6d2cae95",
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "451d7877-4bec-4bb4-8618-ff52aa75cfda": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "451d7877-4bec-4bb4-8618-ff52aa75cfda",
+                      "version": 3,
+                      "type": "to_do",
+                      "created_time": 1712770699310,
+                      "last_edited_time": 1712770699310,
+                      "parent_id": "fbbf99ea-cdfb-4561-8771-dd359135663b",
+                      "parent_table": "block",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "9fa5c54a-35b0-4369-a5c9-4a8ac06713f5": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "9fa5c54a-35b0-4369-a5c9-4a8ac06713f5",
+                      "version": 1,
+                      "type": "header",
+                      "properties": {
+                          "title": [
+                              [
+                                  "To Do"
+                              ]
+                          ]
+                      },
+                      "format": {
+                          "copied_from_pointer": {
+                              "id": "d0c83cae-76f5-4765-ac54-9aeff33e2f84",
+                              "table": "block",
+                              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                          }
+                      },
+                      "created_by": "e0d8983d-9b38-4f83-889d-7d4fc44d4f62",
+                      "created_time": 1712772564163,
+                      "last_edited_by": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_time": 1712772564163,
+                      "parent_id": "a75936b1-1cde-4a5a-9b62-69a6a6e632d2",
+                      "parent_table": "block",
+                      "alive": true,
+                      "copied_from": "d0c83cae-76f5-4765-ac54-9aeff33e2f84",
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "3a0828a4-62a5-4998-bb62-c472b40f4280": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "3a0828a4-62a5-4998-bb62-c472b40f4280",
+                      "version": 40,
+                      "type": "to_do",
+                      "properties": {
+                          "title": [
+                              [
+                                  "Via CEP"
+                              ]
+                          ]
+                      },
+                      "format": {
+                          "copied_from_pointer": {
+                              "id": "5bb9623d-6b79-495c-ae0a-f4e2fd659324",
+                              "table": "block",
+                              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                          }
+                      },
+                      "created_by": "bd3552d4-2e14-448e-b60d-8d0fe921a4ae",
+                      "created_time": 1712772564163,
+                      "last_edited_by": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_time": 1712776724519,
+                      "parent_id": "a75936b1-1cde-4a5a-9b62-69a6a6e632d2",
+                      "parent_table": "block",
+                      "alive": true,
+                      "copied_from": "5bb9623d-6b79-495c-ae0a-f4e2fd659324",
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "7a068739-f8f4-46ba-9689-e2264ea28513": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "7a068739-f8f4-46ba-9689-e2264ea28513",
+                      "version": 3,
+                      "type": "text",
+                      "created_time": 1712776721854,
+                      "last_edited_time": 1712776721854,
+                      "parent_id": "a75936b1-1cde-4a5a-9b62-69a6a6e632d2",
+                      "parent_table": "block",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "5c3161f7-aec4-42ec-ae88-0f953025024f": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "5c3161f7-aec4-42ec-ae88-0f953025024f",
+                      "version": 10,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "Ted"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "postal quando o país for BR? Temos que ver como adicionar campo Bairro ao lado de complemento ou não trazer o bairro, se país = Brasil"
+                              ]
+                          ]
+                      },
+                      "created_time": 1713808842968,
+                      "last_edited_time": 1714349847519,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "ea7e6fc4-38c2-48bc-a81d-dfc3a3a6c6c6": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "ea7e6fc4-38c2-48bc-a81d-dfc3a3a6c6c6",
+                      "version": 14,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "TUD"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "O botão de cópia de sócio proprietário não está funcionando corretamente. O nome não está sendo copiado"
+                              ]
+                          ]
+                      },
+                      "created_time": 1713808891826,
+                      "last_edited_time": 1714349855934,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          },
+          "035b8f26-aa16-484e-9056-d0f044561635": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "035b8f26-aa16-484e-9056-d0f044561635",
+                      "version": 14,
+                      "type": "page",
+                      "properties": {
+                          "^OE@": [
+                              [
+                                  "TUD"
+                              ]
+                          ],
+                          "title": [
+                              [
+                                  "Endereço – quando troco o país, os campos do endereço não estão sendo limpos."
+                              ]
+                          ]
+                      },
+                      "created_time": 1713808868972,
+                      "last_edited_time": 1714349857489,
+                      "parent_id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "parent_table": "collection",
+                      "alive": true,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          }
+      },
+      "collection": {
+          "0bdf4877-4a3b-400c-bb36-6cd732627d62": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "0bdf4877-4a3b-400c-bb36-6cd732627d62",
+                      "version": 8,
+                      "name": [
+                          [
+                              "Task List"
+                          ]
+                      ],
+                      "description": [
+                          [
+                              "Use this template to track your personal tasks.\nClick "
+                          ],
+                          [
+                              "+ New",
+                              [
+                                  [
+                                      "c"
+                                  ]
+                              ]
+                          ],
+                          [
+                              " to create a new task directly on this board.\nClick an existing task to add additional context or subtasks."
+                          ]
+                      ],
+                      "schema": {
+                          "'Y6<": {
+                              "name": "Date Created",
+                              "type": "created_time"
+                          },
+                          "^OE@": {
+                              "name": "Status",
+                              "type": "select",
+                              "options": [
+                                  {
+                                      "id": "1",
+                                      "color": "red",
+                                      "value": "To Do"
+                                  },
+                                  {
+                                      "id": "2",
+                                      "color": "yellow",
+                                      "value": "Doing"
+                                  },
+                                  {
+                                      "id": "3",
+                                      "color": "green",
+                                      "value": "Done 🙌"
+                                  },
+                                  {
+                                      "id": "f7ce260b-f6cc-404e-8692-b17879a49105",
+                                      "color": "gray",
+                                      "value": "Form J"
+                                  },
+                                  {
+                                      "id": "c1c17bcb-cf36-4a8e-bcb9-da5e4dbbc1b1",
+                                      "color": "pink",
+                                      "value": "Ted"
+                                  },
+                                  {
+                                      "id": "73de3fd9-5c5b-4308-a146-8669444d0ceb",
+                                      "color": "brown",
+                                      "value": "TUD"
+                                  }
+                              ]
+                          },
+                          "title": {
+                              "name": "Name",
+                              "type": "title"
+                          }
+                      },
+                      "icon": "✔️",
+                      "format": {
+                          "copied_from_pointer": {
+                              "id": "e472cb86-3703-46b5-b098-a0c1191a4df4",
+                              "table": "collection",
+                              "spaceId": "1f88cc90-92fd-4ce4-bfcd-25daec2ffbbe"
+                          },
+                          "collection_cover_position": 0.4318
+                      },
+                      "parent_id": "2b825b4b-6e0e-4d4a-94ab-4c24d79a3810",
+                      "parent_table": "block",
+                      "alive": true,
+                      "copied_from": "e472cb86-3703-46b5-b098-a0c1191a4df4",
+                      "template_pages": [
+                          "7c10b5c9-be48-4e23-a30d-847888f66eaa"
+                      ],
+                      "migrated": true,
+                      "space_id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5"
+                  },
+                  "role": "editor"
+              }
+          }
+      },
+      "space": {
+          "7dde2035-e5e7-4768-bce7-bf0bfdda84f5": {
+              "spaceId": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+              "value": {
+                  "value": {
+                      "id": "7dde2035-e5e7-4768-bce7-bf0bfdda84f5",
+                      "version": 24,
+                      "name": "Rodolfo Oliveira's Notion",
+                      "permissions": [
+                          {
+                              "role": "editor",
+                              "type": "user_permission",
+                              "user_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6"
+                          }
+                      ],
+                      "icon": "https://lh3.googleusercontent.com/a-/AOh14GiHTxU_G2xO4IWIrQq1khxMsZ53GNC23Wf3mUYtFw=s100",
+                      "beta_enabled": false,
+                      "pages": [
+                          "451561ba-7d79-4da3-929a-815f3c074a6c",
+                          "baddc9df-05b9-40e8-87f1-5df380ba18cd",
+                          "2b825b4b-6e0e-4d4a-94ab-4c24d79a3810",
+                          "ff492e66-135c-4d21-ad5e-9aa86e85f148",
+                          "5323bd7c-45a4-4958-be4f-8c1e16b9b3fc"
+                      ],
+                      "created_time": 1644166688035,
+                      "last_edited_time": 1714351480986,
+                      "created_by_table": "notion_user",
+                      "created_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "last_edited_by_table": "notion_user",
+                      "last_edited_by_id": "e2a7a5a7-af68-41dc-ba3e-c7998a66d0a6",
+                      "plan_type": "personal",
+                      "invite_link_enabled": true,
+                      "settings": {
+                          "space_survey_data": {
+                              "intent": {
+                                  "value": "personal",
+                                  "version": 1,
+                                  "collected_at": 1644166688035,
+                                  "collected_from": "onboarding"
+                              }
+                          }
+                      },
+                      "subscription_tier": "free",
+                      "short_id": "50351302085"
+                  },
+                  "role": "editor"
+              }
+          }
+      }
+  },
+  "collectionIds": [
+      "0bdf4877-4a3b-400c-bb36-6cd732627d62"
+  ],
+  "allBlockIds": [
+      "035b8f26-aa16-484e-9056-d0f044561635",
+      "07c5c9ec-c55f-4805-80ab-86bb511c31b1",
+      "093b3a48-75e4-4ec3-9f80-37f7c9bcfe20",
+      "0f5ff18a-80ab-40d9-9659-131e6334123b",
+      "10af1bf2-fbba-447e-9ffc-547977cadc93",
+      "152bfb3d-60e7-4655-a480-5ff0d0e0c8bc",
+      "1d33c8bf-b63f-4d3c-9e04-44b49a305b04",
+      "2316e6ab-8e92-406b-808d-0fdf7b06b6f9",
+      "23549f5b-6c6a-4b60-bb12-0523a9faaf19",
+      "256d15bc-65eb-4bd9-b792-2eb37365fda1",
+      "26435fbd-6607-4071-a435-55fdf17c0fff",
+      "2b84aebc-8e07-4036-8710-bc8a95df9100",
+      "33e706e8-a32d-421a-aa6a-4e3de0e60815",
+      "3a087cb2-e388-4c93-abac-8d2c35864cdb",
+      "4b799ab5-79aa-414b-9b2e-46c7acda8346",
+      "59eb8e85-5ac3-4dc2-a584-4bedea71b1ea",
+      "5c3161f7-aec4-42ec-ae88-0f953025024f",
+      "66dfa970-b00f-43da-89e4-60faed66f6e5",
+      "6cdcfdb2-62d0-48d2-a315-428e6a6ad7c9",
+      "6d388022-3bb7-4ed1-ac85-766b5f2ec393",
+      "6f66040e-6416-4b78-91e3-0977e82fe32a",
+      "73d9c2cc-75a7-43aa-895b-415af50bb8da",
+      "76c70773-ce73-4c50-b6a4-583305f67164",
+      "7c10b5c9-be48-4e23-a30d-847888f66eaa",
+      "894447c8-f504-4cee-be2a-2ba9a0f61f0c",
+      "9402219a-0235-42df-8690-27ad5a055359",
+      "a75936b1-1cde-4a5a-9b62-69a6a6e632d2",
+      "af7a1865-cf8d-487e-b565-e294cc7e76a1",
+      "af9807fb-fe0c-4b2d-a853-66b1294bea1a",
+      "b8846d4f-a14b-4ad3-87dd-e25cff76b781",
+      "bac26103-c554-4f94-bf27-f9ee747ae95e",
+      "c0fd8459-061b-4430-9f2a-1f956b6b0ed2",
+      "c25d17d3-e569-4ff7-955a-51a5c84b035b",
+      "c99f76b7-a2ad-40be-9955-06cd4b71f8ed",
+      "cb19eabd-42c5-41bb-8fd7-62b854a4e42e",
+      "cbff981b-27da-42f3-b1a8-46495e362a2c",
+      "d8276896-018f-453d-8223-2cd5777b171d",
+      "de60d7c8-d33e-4339-b4e9-cfec8872f50d",
+      "dfb4a310-02c7-4f12-9fde-76c0a4137655",
+      "ea7e6fc4-38c2-48bc-a81d-dfc3a3a6c6c6",
+      "f5ee56a1-f48d-49bb-b0d0-b9c4ff544307",
+      "fbbf99ea-cdfb-4561-8771-dd359135663b"
+  ],
+  "shouldUseClientMode": true,
+  "isViewSpecificClientMode": false
+}

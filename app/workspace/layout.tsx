@@ -1,6 +1,5 @@
 import React from "react";
 import Sidebar from "../components/sidebar/Sidebar";
-import Teste from "../components/teste/teste";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -19,6 +18,5 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="flex h-[91vh] ">{children}</div>
       </div>
     </div>
-    // <Teste />
   );
 }
