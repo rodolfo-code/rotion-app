@@ -1,13 +1,14 @@
 import React, { ReactNode } from "react";
 
-import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function content({ children }: { children: ReactNode }) {
   return (
-    <SheetContent>
+    <SheetContent className="w-[40vw]">
       <SheetHeader>
-        <SheetTitle>Edit profile</SheetTitle>
-        <SheetDescription>Make changes to your profile here. Click save when you're done.</SheetDescription>
+        <SheetTitle className="mt-8">Info</SheetTitle>
+        <SheetDescription>{children}</SheetDescription>
       </SheetHeader>
       <div className="grid gap-4 py-4">
         {/* <div className="grid grid-cols-4 items-center gap-4">
@@ -22,6 +23,7 @@ export default function content({ children }: { children: ReactNode }) {
           </Label>
           <Input id="username" value="@peduarte" className="col-span-3" />
         </div> */}
+        <Textarea rows={10}>{children}</Textarea>
       </div>
       <SheetFooter>
         <SheetClose asChild>{/* <Button type="submit">Save changes</Button> */}</SheetClose>

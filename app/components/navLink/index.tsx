@@ -5,35 +5,23 @@ import React, { useCallback } from "react";
 import { IconType } from "react-icons";
 
 interface NavLinkProps {
-  data: {
-    id: string;
-    name: string;
-    icon: IconType;
-  };
+  href: string;
+  name: string;
+  icon: IconType;
 }
 
-export default function NavLink({ data: { id, name, icon: Icon } }: NavLinkProps) {
+export default function NavLink({ href, name, icon: Icon }: NavLinkProps) {
   const pathname = usePathname();
   const router = useRouter();
 
   return (
     <Link
-      href={`/workspace/${id}`}
+      href={`/workspace/${href}`}
       className={clsx(
-        `
-        group
-        flex
-        gap-x-3
-        rounded-md
-        p-1
-        text-sm
-        leading-6
-        font-semibold
-        text-gray-500
-        hover:text-black
-        hover:bg-gray-100
-      `,
-        pathname === `/${id}` && "bg-gray-100 text-black"
+        "group flex items-center gap-x-3 rounded-md p-1 text-sm leading-6 font-semibold text-gray-500 hover:bg-gray-100 hover:text-black",
+        {
+          "bg-gray-100 text-gray-950": pathname === `/workspace/${href}`,
+        }
       )}
     >
       <Icon className="h-4 w-4" />
