@@ -1,8 +1,11 @@
 import React from "react";
+
 import Sidebar from "../components/sidebar/Sidebar";
+import { DndContext } from "@dnd-kit/core";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
+    // <DndContext>
     <div className="grid  min-h-screen w-full lg:grid-cols-[20vw_1fr]">
       <div className=" hidden border-r border-gray-200 bg-gray-100/40 lg:block w-full">
         {/* <div className=" hidden border-r border-gray-200 bg-gray-100/40 lg:block dark:border-gray-800 dark:bg-gray-800/40"> */}
@@ -18,5 +21,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="flex h-[91vh] ">{children}</div>
       </div>
     </div>
+    // </DndContext>
   );
 }

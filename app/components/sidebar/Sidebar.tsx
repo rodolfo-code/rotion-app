@@ -47,11 +47,8 @@ export default function Sidebar() {
       </div>
       <div className="flex-1 overflow-auto py-2">
         <nav className="grid items-start px-4 text-sm font-medium">
-          {routes.map((data) => (
-            <>
-              {console.log("DATA", data)}
-              <NavLink key={data.id} href={data.id} name={data.name} icon={data.icon} />
-            </>
+          {routes.map(({ id, icon, name }) => (
+            <NavLink key={name} href={id} name={name} icon={icon} />
           ))}
         </nav>
       </div>
