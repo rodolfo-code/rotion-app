@@ -1,5 +1,17 @@
 import { Board } from "@/app/types";
 
+// export let tagColors = {
+//   default: "#e3e2e080",
+//   gray: "#e3e2e0",
+//   yellow: "#fdecc8",
+//   green: "#dbeddb",
+//   blue: "#d3e5ef",
+//   purple: "#e8deee",
+//   pink: "#f5e0e9",
+//   red: "#ffe2dd",
+//   orange: "#fadec9",
+// };
+
 export let loadLists: Board[] = [
   {
     title: "Tarefas",
@@ -59,7 +71,7 @@ export let loadLists: Board[] = [
   {
     title: "Fazendo",
     creatable: false,
-    color: "blue",
+    color: "green",
     cards: [
       {
         id: 6,
@@ -105,7 +117,7 @@ export let loadLists: Board[] = [
   {
     title: "Concluído",
     creatable: false,
-    color: "ligthGreen",
+    color: "blue",
     cards: [
       {
         id: 10,

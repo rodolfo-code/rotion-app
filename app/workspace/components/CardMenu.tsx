@@ -1,28 +1,4 @@
-import {
-  Menubar,
-  MenubarCheckboxItem,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarRadioGroup,
-  MenubarRadioItem,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarSub,
-  MenubarSubContent,
-  MenubarSubTrigger,
-  MenubarTrigger,
-} from "@/components/ui/menubar";
-
-import { PiDotsThreeBold } from "react-icons/pi";
-import { RxDotsHorizontal } from "react-icons/rx";
-import { BiDotsHorizontalRounded } from "react-icons/bi";
-import { FaRegTrashCan } from "react-icons/fa6";
-import { CiEdit } from "react-icons/ci";
-
-import { MdOutlineAutoFixHigh, MdOutlineDelete } from "react-icons/md";
-
-import { CalendarIcon, EnvelopeClosedIcon, FaceIcon, GearIcon, PersonIcon, RocketIcon, TrashIcon, Pencil2Icon } from "@radix-ui/react-icons";
+import { EnvelopeClosedIcon, GearIcon, Pencil2Icon, PersonIcon, RocketIcon, TrashIcon } from "@radix-ui/react-icons";
 
 import {
   Command,

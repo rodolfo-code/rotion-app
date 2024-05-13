@@ -1,17 +1,16 @@
 "use client";
 
-import React, { ChangeEvent, useState } from "react";
+import { ChangeEvent, useState } from "react";
 
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Popover, PopoverClose, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import TaskCard from "../components/TaskCard";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import ColumnComponent from "../components/ColumnComponent";
 
-import { loadLists } from "./mock";
 import { Board } from "@/app/types";
-import { FiPlus } from "react-icons/fi";
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { FiPlus } from "react-icons/fi";
+import { loadLists } from "./mock";
 
 export default function ProjectId() {
   const [list, setList] = useState([...loadLists]);
@@ -27,7 +26,7 @@ export default function ProjectId() {
         ...list,
         {
           title: groupName,
-          color: "gray",
+          color: "yellow",
           creatable: true,
           cards: [],
         },
@@ -36,8 +35,8 @@ export default function ProjectId() {
   }
 
   return (
-    <ScrollArea className="w-[1000vw] whitespace-nowrap border">
-      <div className=" max-h-full w-full  grid grid-flow-col auto-cols-max p-6 gap-1 ">
+    <ScrollArea className="w-[1000vw] whitespace-nowrap">
+      <div className=" max-h-full w-full grid grid-flow-col auto-cols-max p-6 gap-1 ">
         {list.map((data: Board) => (
           <ColumnComponent key={data.title} data={data} />
         ))}

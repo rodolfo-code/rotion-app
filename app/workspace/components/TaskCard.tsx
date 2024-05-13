@@ -1,17 +1,15 @@
 "use client";
 
-import React, { ChangeEvent, useEffect, useRef, useState } from "react";
+import { ChangeEvent, useEffect, useRef, useState } from "react";
 
-import { BiRadioCircle } from "react-icons/bi";
-import { cn } from "@/lib/utils";
-import { ArrowUpCircle, CheckCircle2, Circle, HelpCircle, LucideIcon, MoreHorizontal, XCircle } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 
 import { Card } from "@/app/types";
 import { Sheet } from "@/components/Sheet";
 import { Textarea } from "@/components/ui/textarea";
 import { CardMenu } from "./CardMenu";
 
-import { MdOutlineAutoFixHigh, MdOutlineDelete } from "react-icons/md";
+import { Button } from "@/components/ui/button";
 import { RxDotsHorizontal } from "react-icons/rx";
 
 type TaskCardTypes = {
@@ -26,34 +24,6 @@ type Status = {
   icon: LucideIcon;
 };
 
-const statuses: Status[] = [
-  {
-    value: "backlog",
-    label: "Backlog",
-    icon: HelpCircle,
-  },
-  {
-    value: "todo",
-    label: "Todo",
-    icon: Circle,
-  },
-  {
-    value: "in progress",
-    label: "In Progress",
-    icon: ArrowUpCircle,
-  },
-  {
-    value: "done",
-    label: "Done",
-    icon: CheckCircle2,
-  },
-  {
-    value: "canceled",
-    label: "Canceled",
-    icon: XCircle,
-  },
-];
-
 export default function TaskCard(props: TaskCardTypes) {
   const {
     data: { content, description },
@@ -63,7 +33,6 @@ export default function TaskCard(props: TaskCardTypes) {
   const [text, setText] = useState("");
   const [open, setOpen] = useState(false);
   const [selectedStatus, setSelectedStatus] = useState<Status | null>(null);
-  const [showModal, setShowModal] = useState(false);
 
   const textAreaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -91,20 +60,16 @@ export default function TaskCard(props: TaskCardTypes) {
 
   return (
     <div className="group relative">
-      <div className="hidden z-50 left-[87%] top-[6%] group-hover:block absolute">
-        <div className="flex h-4 p-2 w-8 hover:bg-neutral-100 relative ">
-          <RxDotsHorizontal className="self-center" onClick={() => setOpen(true)} />
-        </div>
+      <div className="hidden z-50 left-[86.3%] top-[7%] group-hover:block absolute">
+        <Button onClick={() => setOpen(true)} variant="outline" size="icon" className="flex h-5 p-2 w-9 hover:bg-neutral-100 relative shadow-sm">
+          <RxDotsHorizontal className="self-center" />
+        </Button>
       </div>
-      <div className="absolute z-50 left-64 top-3 w-56">{open && <CardMenu onClose={() => setOpen(false)} />}</div>
-      {/* <div className="relative z-50"></div> */}
+      <div className="absolute z-50 left-68 top-3 w-56">{open && <CardMenu onClose={() => setOpen(false)} />}</div>
 
       <Sheet.Root>
         <Sheet.Trigger>
           <div className="hover:bg-gray-50 transition-colors hover:shadow-sm shadow-sm bg-white rounded min-h-12 relative cursor-pointer border-[1px]">
-            {/* <div id="header" className="flex justify-end p-0.5">
-              <BiRadioCircle color={color} />
-            </div> */}
             <div className="flex flex-wrap px-3 pb-3">
               <p className="text-wrap text-xs text-gray-900 font-medium dark:text-gray-400 mt-2">{content}</p>
             </div>

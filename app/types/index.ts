@@ -1,3 +1,7 @@
+// import { TagColors } from "@/utils/tagColors";
+
+import { TagColors } from "@/utils/TagColors";
+
 export interface Card {
   id: number;
   content: string;
@@ -9,7 +13,7 @@ export interface Card {
 export interface Board {
   title: string;
   // type: "todo" | "doing" | "paused" | "done" | "other";
-  color?: string;
+  color: keyof typeof TagColors;
   creatable: boolean;
   cards: Card[];
 }
