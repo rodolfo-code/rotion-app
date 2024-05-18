@@ -20,7 +20,7 @@ export default function ProjectId() {
     setGroupName(e.target.value);
   }
 
-  function handleNewGroup() {
+  function handleAddNewGroup() {
     if (!!groupName) {
       setList([
         ...list,
@@ -51,7 +51,7 @@ export default function ProjectId() {
             <PopoverContent className="flex items-center h-10 p-0 pr-1 shadow-lg shadow-gray-400 ">
               <Input onChange={handleGroupName} placeholder="New group" className="h-8 focus-visible:ring-gray-500 text-xs p-2 border-none" />
               <PopoverClose>
-                <Button onClick={handleNewGroup} variant="outline" className="h-8  p-3 text-xs">
+                <Button onClick={handleAddNewGroup} variant="outline" className="h-8  p-3 text-xs">
                   Done
                 </Button>
               </PopoverClose>

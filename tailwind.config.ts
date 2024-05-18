@@ -33,6 +33,7 @@ const config = {
       },
       fontSize: {
         xxs: "11px",
+        s: "13px",
       },
     },
   },

@@ -59,7 +59,7 @@ export default function TaskCard(props: TaskCardTypes) {
   }
 
   return (
-    <div className="group relative">
+    <div className="group relative shadow-sm">
       <div className="hidden z-50 left-[86.3%] top-[7%] group-hover:block absolute">
         <Button onClick={() => setOpen(true)} variant="outline" size="icon" className="flex h-5 p-2 w-9 hover:bg-neutral-100 relative shadow-sm">
           <RxDotsHorizontal className="self-center" />

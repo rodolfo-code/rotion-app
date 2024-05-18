@@ -7,6 +7,9 @@ import TaskCard from "./TaskCard";
 import { Board, Card } from "@/app/types";
 import clsx from "clsx";
 import { TagColors } from "@/utils/TagColors";
+import { Button } from "@/components/ui/button";
+import { RxDotsHorizontal } from "react-icons/rx";
+import ColumnMenu from "./ColumnMenu";
 
 export default function ColumnComponent({ data: { cards, color, title } }: { data: Board }) {
   const [taskCards, setTaskCards] = useState<Card[]>([...cards]);
@@ -35,14 +38,19 @@ export default function ColumnComponent({ data: { cards, color, title } }: { dat
   return (
     <>
       <div className=" w-[20vw] flex flex-col  dark:bg-gray-800 rounded-lg p-2 space-y-1.5">
-        <div className="flex items-center justify-between">
-          <h2 className="text-lg font-semibold">{title}</h2>
+        <div className="flex items-center justify-between ">
+          <h2 style={{ backgroundColor: `${TagColors[color]}` }} className="text-xs font-semibold px-1.5 py-0.5 rounded-sm">
+            {title}
+          </h2>
+
           <span
             style={{ backgroundColor: `${TagColors[color]}` }}
             className={clsx("text-xxs dark:bg-gray-700 text-[#341414] font-medium dark:text-gray-400 px-2 py-1 rounded-full")}
           >
-            Tasks {cards.length}
+            {/* {cards.length} */}
           </span>
+
+          <ColumnMenu />
         </div>
         <div className=" space-y-1.5">
           {taskCards.map((card: Card) => (

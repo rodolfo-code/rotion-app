@@ -1,13 +1,3 @@
-// import Image from "next/image";
-
-// export default function Home() {
-//   return (
-//     <div>
-//       <div>Login page Rotion App </div>
-//     </div>
-//   );
-// }
-
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
