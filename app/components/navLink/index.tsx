@@ -18,7 +18,7 @@ export default function NavLink({ href, name, icon: Icon }: NavLinkProps) {
     <Link
       href={`/workspace/${href}`}
       className={clsx(
-        "group flex items-center gap-x-3 rounded-md p-1 text-sm leading-6 font-semibold text-gray-500 hover:bg-gray-100 hover:text-black",
+        "group flex items-start gap-x-3 rounded-md p-1 text-sm leading-6 font-semibold text-gray-500 hover:bg-gray-100 hover:text-black whitespace-nowrap overflow-hidden text-ellipsis",
         {
           "bg-gray-100 text-gray-950": pathname === `/workspace/${href}`,
         }
