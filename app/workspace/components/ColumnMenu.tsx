@@ -53,7 +53,6 @@ export default function ColumnMenu() {
         <DropdownMenuGroup>
           {colors.map(({ name, color }) => (
             <DropdownMenuItem key={name}>
-              {/* <Square fill={color} color="#e3e2e080" className="mr-2 h-5 w-5" /> */}
               <div
                 style={{ backgroundColor: color }}
                 className="w-[18px] h-[18px] bg-[#f5e0e9] shadow-[inset_0_0_0_1px_rgba(15,15,15,0.1)] rounded-[4px] mr-2"

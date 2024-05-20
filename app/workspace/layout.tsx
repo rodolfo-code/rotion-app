@@ -7,7 +7,7 @@ import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "@/componen
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <ResizablePanelGroup direction="horizontal" className="">
-      <ResizablePanel defaultSize={20} className="min-w-[15vw] w-[20vw] ">
+      <ResizablePanel defaultSize={17} className="min-w-[12vw] w-[20vw] ">
         <div className="hidden bg-gray-100/40 lg:block  h-full">
           <Sidebar />
         </div>
