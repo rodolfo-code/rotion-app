@@ -2,6 +2,14 @@
 
 import { TagColors } from "@/utils/TagColors";
 
+export interface Projects {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  icon: string;
+}
+
 export interface Card {
   id: number;
   content: string;

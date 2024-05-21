@@ -40,8 +40,8 @@ export default function ProjectId() {
         {list.map((data: Board) => (
           <ColumnComponent key={data.title} data={data} />
         ))}
-        <div className=" dark:bg-gray-800 rounded-lg p-2 space-y-1.5">
-          <Popover>
+        <Popover>
+          <div className=" dark:bg-gray-800 rounded-lg p-2 space-y-1.5">
             <PopoverTrigger asChild>
               <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-gray-100 hover:text-accent-foreground ml-auto h-8 w-8">
                 <FiPlus color="#37352F50" />
@@ -56,8 +56,8 @@ export default function ProjectId() {
                 </Button>
               </PopoverClose>
             </PopoverContent>
-          </Popover>
-        </div>
+          </div>
+        </Popover>
       </div>
 
       <ScrollBar orientation="horizontal" />
