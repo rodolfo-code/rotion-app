@@ -7,6 +7,9 @@ import { LuPackage2, LuBell } from "react-icons/lu";
 import { RxPlus } from "react-icons/rx";
 import getProjects from "@/services/ProjectService/getProjects";
 import clsx from "clsx";
+import { createProject } from "@/app/actions/createProject";
+import ContentAddPopover from "../../../components/ContentAddPopover";
+import { revalidatePath } from "next/cache";
 
 // const routes = [
 //   {
@@ -36,7 +39,17 @@ export default async function Sidebar() {
 
   const data = await getProjects();
 
-  console.log(data);
+  async function handleAddProject(formData: FormData) {
+    "use server";
+
+    await createProject(formData);
+
+    revalidatePath("/workspace/[id]", "layout");
+  }
+
+  // async function handleChange() {
+  //   "use server";
+  // }
 
   return (
     <>
@@ -56,15 +69,7 @@ export default async function Sidebar() {
             {data.map(({ id, icon, title }) => (
               <NavLink key={title} href={id} title={title} icon={"goTasklist"} />
             ))}
-            <div
-              // onClick={}
-              className={clsx(
-                "group flex items-start gap-x-3 rounded-md py-1.5 px-2 text-sm leading-6 font-semibold text-gray-500 hover:bg-gray-100 hover:text-gray-500 whitespace-nowrap overflow-hidden text-ellipsis cursor-pointer"
-              )}
-            >
-              <RxPlus className="h-4 w-4" />
-              <p className="text-xs">Add a project</p>
-            </div>
+            <ContentAddPopover handleAddProject={handleAddProject} />
           </nav>
         </div>
       </div>

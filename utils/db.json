@@ -3,30 +3,60 @@
     {
       "id": "f4238464-5a59-4960-a99a-01bd7ecb3970",
       "title": "Integridade Corporativa",
-      "subtitle": "",
       "description": "Desenvolvimento dos formulario do portal integridade corporativa",
       "emoji": ""
     },
     {
       "id": "374c345c-3c33-4763-bca2-edb76c2f86be",
       "title": "Backend integridade DDP",
-      "subtitle": "",
       "description": "",
       "emoji": ""
     },
     {
       "id": "63adfee4-893b-40e1-8251-e049b79eb92b",
       "title": "Frontend BV",
-      "subtitle": "",
       "description": "",
       "emoji": ""
     },
     {
       "id": "10cdc08b-1874-4bea-ab7d-b5ddf08b4893",
       "title": "Frontend Allos",
-      "subtitle": "",
       "description": "",
       "emoji": ""
+    },
+    {
+      "id": "4d9a",
+      "title": "sasasasasas",
+      "description": "",
+      "emoji": ""
+    },
+    {
+      "id": "5012",
+      "userId": null,
+      "title": "qwqwqwqwqwqwqwqw",
+      "description": "",
+      "icon": ""
+    },
+    {
+      "id": "5f71",
+      "userId": null,
+      "title": "eita",
+      "description": "",
+      "icon": ""
+    },
+    {
+      "id": "7195",
+      "userId": null,
+      "title": "Untitled",
+      "description": "",
+      "icon": ""
+    },
+    {
+      "id": "0421",
+      "userId": null,
+      "title": "Untitled",
+      "description": "",
+      "icon": ""
     }
   ],
   "columns": [
@@ -41,7 +71,9 @@
           "id": 1,
           "columnId": "a23fcc8e-60ea-4601-9ad2-9f2801baf2c0",
           "content": "Verificar status para serem todos iguais no momento de filtrar nas grids",
-          "labels": ["#7159c1"],
+          "labels": [
+            "#7159c1"
+          ],
           "user": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png",
           "description": "O artigo analisa o impacto das redes sociais na saúde mental dos adolescentes, considerando diversos estudos e pesquisas recentes. Ele destaca que, embora as redes sociais ofereçam oportunidades de conexão e interação, também podem contribuir para o aumento do estresse, ansiedade, e depressão entre os adolescentes."
         },
@@ -49,14 +81,18 @@
           "id": 2,
           "columnId": "a23fcc8e-60ea-4601-9ad2-9f2801baf2c0",
           "content": "Incluir opção de apoio no formulário de fornecedores (semelhante ao COI)",
-          "labels": ["#7159c1"],
+          "labels": [
+            "#7159c1"
+          ],
           "user": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png",
           "description": "O artigo analisa o impacto das redes sociais na saúde mental dos adolescentes, considerando diversos estudos e pesquisas recentes. Ele destaca que, embora as redes sociais ofereçam oportunidades de conexão e interação, também podem contribuir para o aumento do estresse, ansiedade, e depressão entre os adolescentes."
         },
         {
           "id": 3,
           "content": "Modificar input de adicionar países",
-          "labels": ["#7159c1"],
+          "labels": [
+            "#7159c1"
+          ],
           "user": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png",
           "description": "O artigo analisa o impacto das redes sociais na saúde mental dos adolescentes, considerando diversos estudos e pesquisas recentes. Ele destaca que, embora as redes sociais ofereçam oportunidades de conexão e interação, também podem contribuir para o aumento do estresse, ansiedade, e depressão entre os adolescentes."
         },
@@ -64,7 +100,9 @@
           "id": 4,
           "columnId": "a23fcc8e-60ea-4601-9ad2-9f2801baf2c0",
           "content": "Verificar como usuário conseguiu enviar solicitação sem preencher pergunta 3 Subcontract",
-          "labels": ["#54e1f7"],
+          "labels": [
+            "#54e1f7"
+          ],
           "user": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png",
           "description": "O artigo analisa o impacto das redes sociais na saúde mental dos adolescentes, considerando diversos estudos e pesquisas recentes. Ele destaca que, embora as redes sociais ofereçam oportunidades de conexão e interação, também podem contribuir para o aumento do estresse, ansiedade, e depressão entre os adolescentes."
         },
@@ -72,7 +110,9 @@
           "id": 5,
           "columnId": "a23fcc8e-60ea-4601-9ad2-9f2801baf2c0",
           "content": "Gravar testes e deploy ReactJS",
-          "labels": ["#54e1f7"],
+          "labels": [
+            "#54e1f7"
+          ],
           "user": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png",
           "description": "O artigo analisa o impacto das redes sociais na saúde mental dos adolescentes, considerando diversos estudos e pesquisas recentes. Ele destaca que, embora as redes sociais ofereçam oportunidades de conexão e interação, também podem contribuir para o aumento do estresse, ansiedade, e depressão entre os adolescentes."
         },
@@ -80,7 +120,9 @@
           "id": 6,
           "columnId": "a23fcc8e-60ea-4601-9ad2-9f2801baf2c0",
           "content": "Gravar testes e deploy ReactJS",
-          "labels": ["#54e1f7"],
+          "labels": [
+            "#54e1f7"
+          ],
           "user": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png",
           "description": "O artigo analisa o impacto das redes sociais na saúde mental dos adolescentes, considerando diversos estudos e pesquisas recentes. Ele destaca que, embora as redes sociais ofereçam oportunidades de conexão e interação, também podem contribuir para o aumento do estresse, ansiedade, e depressão entre os adolescentes."
         }
@@ -121,17 +163,21 @@
           "id": 12,
           "columnId": "bd5d3aba-d074-4178-a702-cc21f73652d9",
           "content": "Países em que opera – quando usuário escolher um país e quiser adicionar outro, sempre limpar campo depois de adicionado.",
-          "labels": ["#54e1f7"],
+          "labels": [
+            "#54e1f7"
+          ],
           "description": "O artigo analisa o impacto das redes sociais na saúde mental dos adolescentes, considerando diversos estudos e pesquisas recentes. Ele destaca que, embora as redes sociais ofereçam oportunidades de conexão e interação, também podem contribuir para o aumento do estresse, ansiedade, e depressão entre os adolescentes."
         },
         {
           "id": 13,
           "columnId": "bd5d3aba-d074-4178-a702-cc21f73652d9",
           "content": "Adicionar mais uma coluna País (endereço) na tabela do formulário Fornecedores",
-          "labels": ["#7159c1"],
+          "labels": [
+            "#7159c1"
+          ],
           "description": "O artigo analisa o impacto das redes sociais na saúde mental dos adolescentes, considerando diversos estudos e pesquisas recentes. Ele destaca que, embora as redes sociais ofereçam oportunidades de conexão e interação, também podem contribuir para o aumento do estresse, ansiedade, e depressão entre os adolescentes."
         }
       ]
     }
-  ]  
+  ]
 }
