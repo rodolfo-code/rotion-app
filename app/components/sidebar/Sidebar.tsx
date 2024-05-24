@@ -11,45 +11,8 @@ import { createProject } from "@/app/actions/createProject";
 import ContentAddPopover from "../../../components/ContentAddPopover";
 import { revalidatePath } from "next/cache";
 
-// const routes = [
-//   {
-//     id: "2345-fcv32-fnfjd3-2234",
-//     name: "Front Integridade",
-//     icon: GoTasklist,
-//   },
-//   {
-//     id: "23f3-4g564-ffjn4-20dh3",
-//     name: "Backend Integridade",
-//     icon: GoTasklist,
-//   },
-//   {
-//     id: "djfn5-293hd-235ede-34rsf3e",
-//     name: "Front BV",
-//     icon: GoTasklist,
-//   },
-//   {
-//     id: "f43rert-dsfds-mnbbnm-rghbcgwww",
-//     name: "Front Allos",
-//     icon: GoTasklist,
-//   },
-// ];
-
 export default async function Sidebar() {
-  // const routes = useRoutes(mockProjects);
-
   const data = await getProjects();
-
-  async function handleAddProject(formData: FormData) {
-    "use server";
-
-    await createProject(formData);
-
-    revalidatePath("/workspace/[id]", "layout");
-  }
-
-  // async function handleChange() {
-  //   "use server";
-  // }
 
   return (
     <>
@@ -67,9 +30,9 @@ export default async function Sidebar() {
         <div className="flex-1 overflow-auto py-2">
           <nav className="grid items-start px-1.5 text-sm font-medium gap-px">
             {data.map(({ id, icon, title }) => (
-              <NavLink key={title} href={id} title={title} icon={"goTasklist"} />
+              <NavLink key={title} href={id} id={id} title={title} icon={"goTasklist"} />
             ))}
-            <ContentAddPopover handleAddProject={handleAddProject} />
+            <ContentAddPopover />
           </nav>
         </div>
       </div>
