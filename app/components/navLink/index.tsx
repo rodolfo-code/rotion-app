@@ -3,35 +3,14 @@
 import { Button } from "@/components/ui/button";
 import clsx from "clsx";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import React, { useCallback, useState } from "react";
-import { IconType } from "react-icons";
+import { usePathname } from "next/navigation";
 
 import { GoTasklist } from "react-icons/go";
 import { RxDotsHorizontal } from "react-icons/rx";
 
-import * as Cmd from "@/components/ui/command";
 import { EnvelopeClosedIcon, GearIcon, Pencil2Icon, PersonIcon, TrashIcon } from "@radix-ui/react-icons";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { CardMenu } from "@/app/workspace/components/CardMenu";
 
-import {
-  Cloud,
-  CreditCard,
-  Github,
-  Keyboard,
-  LifeBuoy,
-  LogOut,
-  Mail,
-  MessageSquare,
-  Plus,
-  PlusCircle,
-  RocketIcon,
-  Settings,
-  User,
-  UserPlus,
-  Users,
-} from "lucide-react";
+import { RocketIcon } from "lucide-react";
 
 import {
   Command,
@@ -44,23 +23,11 @@ import {
   CommandShortcut,
 } from "@/components/ui/command";
 
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { deleteProject } from "@/services/ProjectService/deleteProject";
 
 interface NavLinkProps {
-  id: string;
+  projectId: string;
   href: string;
   title: string;
   icon: keyof typeof icons;
@@ -70,25 +37,29 @@ let icons = {
   goTasklist: GoTasklist,
 };
 
-export default function NavLink({ href, title, icon, id }: NavLinkProps) {
+export default function NavLink({ href, title, icon, projectId }: NavLinkProps) {
   const pathname = usePathname();
-  // const router = useRouter();
+  let currentRoute = pathname;
 
-  function handleDeleteProject({ id }: { id: string }) {}
+  async function handleDeleteProject(id: string) {
+    let shouldRedirect = currentRoute.includes(projectId);
+    await deleteProject(id, shouldRedirect);
+  }
 
   const IconComponent = icons[icon];
 
   return (
-    <Link
-      href={`/workspace/${href}`}
-      className={clsx(
-        "group relative flex items-start gap-x-3 rounded-md py-1.5 px-2 text-sm leading-6 font-medium text-gray-600 hover:bg-gray-100 hover:text-black whitespace-nowrap overflow-hidden text-ellipsis cursor-pointer",
-        {
-          "bg-gray-100 text-gray-950": pathname === `/workspace/${href}`,
-        }
-      )}
-    >
-      <div className="group flex justify-between w-full">
+    <>
+      <Link
+        href={`/workspace/${href}`}
+        className={clsx(
+          "group relative z-10 flex items-start gap-x-3 rounded-md py-1.5 px-2 text-sm leading-6 font-medium text-gray-600 hover:bg-gray-100 hover:text-black whitespace-nowrap overflow-hidden text-ellipsis cursor-pointer",
+          {
+            "bg-gray-100 text-gray-950": pathname === `/workspace/${href}`,
+          }
+        )}
+      ></Link>
+      <div className="z-40 group flex justify-between w-full">
         <div className="flex gap-x-3">
           <IconComponent className="h-4 w-4" />
           <p className="text-xs">{title}</p>
@@ -106,33 +77,52 @@ export default function NavLink({ href, title, icon, id }: NavLinkProps) {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-56">
-            <DropdownMenuLabel>My Account</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuGroup>
-              <DropdownMenuItem>
-                <User className="mr-2 h-4 w-4" />
-                <span>Profile</span>
-                <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <CreditCard className="mr-2 h-4 w-4" />
-                <span>Billing</span>
-                <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Settings className="mr-2 h-4 w-4" />
-                <span>Settings</span>
-                <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Keyboard className="mr-2 h-4 w-4" />
-                <span>Keyboard shortcuts</span>
-                <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
-              </DropdownMenuItem>
-            </DropdownMenuGroup>
+            <form action={() => handleDeleteProject(projectId)}>
+              <button>CLIQUE</button>
+            </form>
+            <Command className="">
+              <CommandInput placeholder="Type a command or search..." />
+              <CommandList>
+                <CommandEmpty>No results found.</CommandEmpty>
+                <CommandGroup heading="Suggestions">
+                  <CommandItem className="">
+                    <Pencil2Icon className="mr-2 h-4 w-4" />
+                    <span>Edit</span>
+                  </CommandItem>
+                  <CommandItem>
+                    <form action={() => handleDeleteProject(projectId)}>
+                      <TrashIcon className="mr-2 h-4 w-4" onClick={() => handleDeleteProject(projectId)} />
+                      <span>Delete</span>
+                    </form>
+                  </CommandItem>
+                  <CommandItem>
+                    <RocketIcon className="mr-2 h-4 w-4" />
+                    <span>Launch</span>
+                  </CommandItem>
+                </CommandGroup>
+                <CommandSeparator />
+                <CommandGroup heading="Settings">
+                  <CommandItem>
+                    <PersonIcon className="mr-2 h-4 w-4" />
+                    <span>Profile</span>
+                    <CommandShortcut>⌘P</CommandShortcut>
+                  </CommandItem>
+                  <CommandItem>
+                    <EnvelopeClosedIcon className="mr-2 h-4 w-4" />
+                    <span>Mail</span>
+                    <CommandShortcut>⌘B</CommandShortcut>
+                  </CommandItem>
+                  <CommandItem>
+                    <GearIcon className="mr-2 h-4 w-4" />
+                    <span>Settings</span>
+                    <CommandShortcut>⌘S</CommandShortcut>
+                  </CommandItem>
+                </CommandGroup>
+              </CommandList>
+            </Command>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-    </Link>
+    </>
   );
 }

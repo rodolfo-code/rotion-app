@@ -1,28 +1,21 @@
+"use client";
 import clsx from "clsx";
-import React, { FormEvent, useState } from "react";
 import { RxPlus } from "react-icons/rx";
 
-import { Popover, PopoverClose, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "./ui/form";
+import { Popover, PopoverClose, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
-import { useForm } from "react-hook-form";
-import { createProject } from "@/app/actions/createProject";
-import { revalidatePath, revalidateTag } from "next/cache";
+import { useFormState } from "react-dom";
+import { createProject } from "@/services/ProjectService/createProject";
 
 export default function ContentAddPopover() {
-  async function handleAddProject(formData: FormData) {
-    "use server";
+  // const initialState = { message: null, errors: {} };
+  // const [state, dispatch] = useFormState(createProject, initialState);
 
-    await createProject(formData);
-
-    revalidatePath("/workspace/[id]", "layout");
-  }
   return (
     <form
-      action={handleAddProject}
-      method="POST"
+      action={createProject}
       id="add-project-form"
       className={clsx(
         "group flex items-start gap-x-3 rounded-md py-1.5 px-2 text-sm leading-6 font-semibold text-gray-500 bg-gray-100 hover:text-gray-500 whitespace-nowrap overflow-hidden text-ellipsis cursor-pointer"

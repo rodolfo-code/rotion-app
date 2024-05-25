@@ -1,19 +1,7 @@
-import { EnvelopeClosedIcon, GearIcon, Pencil2Icon, PersonIcon, RocketIcon, TrashIcon } from "@radix-ui/react-icons";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { GearIcon, Pencil2Icon, RocketIcon, TrashIcon } from "@radix-ui/react-icons";
 
+import { Button } from "@/components/ui/button";
 import {
   Command,
   CommandEmpty,
@@ -24,10 +12,7 @@ import {
   CommandSeparator,
   CommandShortcut,
 } from "@/components/ui/command";
-import { useEffect, useRef, useState } from "react";
-import { Button } from "@/components/ui/button";
 import { RxDotsHorizontal } from "react-icons/rx";
-import { CreditCard, Keyboard, Settings, User } from "lucide-react";
 
 export function CardMenu({ onClose }: any) {
   return (
@@ -41,31 +26,35 @@ export function CardMenu({ onClose }: any) {
           <RxDotsHorizontal color="gray" size={15} className="self-center" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel>My Account</DropdownMenuLabel>
-        <DropdownMenuSeparator />
-        <DropdownMenuGroup>
-          <DropdownMenuItem>
-            <User className="mr-2 h-4 w-4" />
-            <span>Profile</span>
-            <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <CreditCard className="mr-2 h-4 w-4" />
-            <span>Billing</span>
-            <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Settings className="mr-2 h-4 w-4" />
-            <span>Settings</span>
-            <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Keyboard className="mr-2 h-4 w-4" />
-            <span>Keyboard shortcuts</span>
-            <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
-          </DropdownMenuItem>
-        </DropdownMenuGroup>
+      <DropdownMenuContent align="start" className="w-56 " side="right">
+        <Command className="">
+          <CommandInput placeholder="Type a command or search..." />
+          <CommandList>
+            <CommandEmpty>No results found.</CommandEmpty>
+            <CommandGroup heading="Suggestions">
+              <CommandItem className="">
+                <Pencil2Icon className="mr-2 h-4 w-4" />
+                <span>Edit</span>
+              </CommandItem>
+              <CommandItem>
+                <TrashIcon className="mr-2 h-4 w-4" />
+                <span>Delete</span>
+              </CommandItem>
+              <CommandItem>
+                <RocketIcon className="mr-2 h-4 w-4" />
+                <span>Launch</span>
+              </CommandItem>
+            </CommandGroup>
+            <CommandSeparator />
+            <CommandGroup heading="Settings">
+              <CommandItem>
+                <GearIcon className="mr-2 h-4 w-4" />
+                <span>Settings</span>
+                <CommandShortcut>⌘S</CommandShortcut>
+              </CommandItem>
+            </CommandGroup>
+          </CommandList>
+        </Command>
       </DropdownMenuContent>
     </DropdownMenu>
   );
