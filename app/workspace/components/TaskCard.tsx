@@ -9,9 +9,6 @@ import { Sheet } from "@/components/Sheet";
 import { Textarea } from "@/components/ui/textarea";
 import { CardMenu } from "./CardMenu";
 
-import { Button } from "@/components/ui/button";
-import { RxDotsHorizontal } from "react-icons/rx";
-
 type TaskCardTypes = {
   data: Card;
   color: string | undefined;
