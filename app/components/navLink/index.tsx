@@ -77,9 +77,6 @@ export default function NavLink({ href, title, icon, projectId }: NavLinkProps) 
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-56">
-            <form action={() => handleDeleteProject(projectId)}>
-              <button>CLIQUE</button>
-            </form>
             <Command className="">
               <CommandInput placeholder="Type a command or search..." />
               <CommandList>
@@ -89,11 +86,9 @@ export default function NavLink({ href, title, icon, projectId }: NavLinkProps) 
                     <Pencil2Icon className="mr-2 h-4 w-4" />
                     <span>Edit</span>
                   </CommandItem>
-                  <CommandItem>
-                    <form action={() => handleDeleteProject(projectId)}>
-                      <TrashIcon className="mr-2 h-4 w-4" onClick={() => handleDeleteProject(projectId)} />
-                      <span>Delete</span>
-                    </form>
+                  <CommandItem onSelect={() => handleDeleteProject(projectId)}>
+                    <TrashIcon className="mr-2 h-4 w-4" />
+                    <span>Delete</span>
                   </CommandItem>
                   <CommandItem>
                     <RocketIcon className="mr-2 h-4 w-4" />
