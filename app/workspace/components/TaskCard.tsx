@@ -59,18 +59,13 @@ export default function TaskCard(props: TaskCardTypes) {
   }
 
   return (
-    <div className="group relative shadow-sm">
-      <div className="hidden z-50 left-[86.3%] top-[7%] group-hover:block absolute">
-        <Button onClick={() => setOpen(true)} variant="outline" size="icon" className="flex h-5 p-2 w-9 hover:bg-neutral-100 relative shadow-sm">
-          <RxDotsHorizontal className="self-center" />
-        </Button>
-      </div>
-      <div className="absolute z-50 left-68 top-3 w-56">{open && <CardMenu onClose={() => setOpen(false)} />}</div>
+    <div className="group relative shadow-sm z-10">
+      <CardMenu />
 
       <Sheet.Root>
         <Sheet.Trigger>
-          <div className="hover:bg-gray-50 transition-colors hover:shadow-sm shadow-sm bg-white rounded min-h-12 relative cursor-pointer border-[1px]">
-            <div className="flex flex-wrap px-3 pb-3">
+          <div className="relative hover:bg-gray-50 transition-colors hover:shadow-sm shadow-sm bg-white rounded min-h-12 cursor-pointer border-[1px]">
+            <div className="flex flex-wrap px-3 pb-3 relative">
               <p className="text-wrap text-xs text-gray-900 font-medium dark:text-gray-400 mt-2">{content}</p>
             </div>
           </div>

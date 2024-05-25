@@ -1,7 +1,8 @@
-import { Projects } from "@/app/types";
 import api from "../axiosConfig";
 
-const getProjects = async (): Promise<Projects[] | []> => {
+import { Projects } from "@/app/types";
+
+async function getProjects(): Promise<Projects[] | []> {
   "use server";
   try {
     const { data } = await api.get("/projects");
@@ -11,6 +12,6 @@ const getProjects = async (): Promise<Projects[] | []> => {
     console.log("Erro ao obter projects", error);
     return [];
   }
-};
+}
 
-export default getProjects;
+export { getProjects };

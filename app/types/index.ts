@@ -25,3 +25,8 @@ export interface Board {
   creatable: boolean;
   cards: Card[];
 }
+
+export interface ProjectError {
+  message: string;
+  error: any;
+}

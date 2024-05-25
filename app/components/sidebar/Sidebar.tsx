@@ -1,15 +1,10 @@
 "use server";
 
-import React from "react";
 import Link from "next/link";
-import NavLink from "../navLink";
-import { LuPackage2, LuBell } from "react-icons/lu";
-import { RxPlus } from "react-icons/rx";
-import getProjects from "@/services/ProjectService/getProjects";
-import clsx from "clsx";
-import { createProject } from "@/app/actions/createProject";
+import { LuBell, LuPackage2 } from "react-icons/lu";
 import ContentAddPopover from "../../../components/ContentAddPopover";
-import { revalidatePath } from "next/cache";
+import NavLink from "../navLink";
+import { getProjects } from "@/services/ProjectService/getProjects";
 
 export default async function Sidebar() {
   const data = await getProjects();
@@ -30,7 +25,7 @@ export default async function Sidebar() {
         <div className="flex-1 overflow-auto py-2">
           <nav className="grid items-start px-1.5 text-sm font-medium gap-px">
             {data.map(({ id, icon, title }) => (
-              <NavLink key={title} href={id} id={id} title={title} icon={"goTasklist"} />
+              <NavLink key={title} href={id} projectId={id} title={title} icon={"goTasklist"} />
             ))}
             <ContentAddPopover />
           </nav>
