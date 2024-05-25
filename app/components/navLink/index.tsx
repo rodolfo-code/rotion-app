@@ -11,8 +11,53 @@ import { GoTasklist } from "react-icons/go";
 import { RxDotsHorizontal } from "react-icons/rx";
 
 import * as Cmd from "@/components/ui/command";
-import { Pencil2Icon, TrashIcon } from "@radix-ui/react-icons";
+import { EnvelopeClosedIcon, GearIcon, Pencil2Icon, PersonIcon, TrashIcon } from "@radix-ui/react-icons";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { CardMenu } from "@/app/workspace/components/CardMenu";
+
+import {
+  Cloud,
+  CreditCard,
+  Github,
+  Keyboard,
+  LifeBuoy,
+  LogOut,
+  Mail,
+  MessageSquare,
+  Plus,
+  PlusCircle,
+  RocketIcon,
+  Settings,
+  User,
+  UserPlus,
+  Users,
+} from "lucide-react";
+
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+  CommandShortcut,
+} from "@/components/ui/command";
+
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuPortal,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 interface NavLinkProps {
   id: string;
@@ -27,7 +72,6 @@ let icons = {
 
 export default function NavLink({ href, title, icon, id }: NavLinkProps) {
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
   // const router = useRouter();
 
   function handleDeleteProject({ id }: { id: string }) {}
@@ -38,63 +82,56 @@ export default function NavLink({ href, title, icon, id }: NavLinkProps) {
     <Link
       href={`/workspace/${href}`}
       className={clsx(
-        "group relative flex items-start gap-x-3 rounded-md py-2 px-2 text-sm leading-6 font-medium text-gray-600 hover:bg-gray-100 hover:text-black whitespace-nowrap overflow-hidden text-ellipsis cursor-pointer",
+        "group relative flex items-start gap-x-3 rounded-md py-1.5 px-2 text-sm leading-6 font-medium text-gray-600 hover:bg-gray-100 hover:text-black whitespace-nowrap overflow-hidden text-ellipsis cursor-pointer",
         {
           "bg-gray-100 text-gray-950": pathname === `/workspace/${href}`,
         }
       )}
     >
-      <div className="flex justify-between w-full">
+      <div className="group flex justify-between w-full">
         <div className="flex gap-x-3">
           <IconComponent className="h-4 w-4" />
           <p className="text-xs">{title}</p>
         </div>
 
-        {/* <div className="hidden z-50 right-[6px] self-center group-hover:block absolute">
-          <Button
-            onClick={() => setOpen(true)}
-            variant="outline"
-            size="icon"
-            className="flex h-5 p-0 w-6 bg-inherityyy hover:bg-neutral-200 relative border-none rounded-sm"
-          >
-            <RxDotsHorizontal color="gray" size={15} className="self-center" />
-          </Button>
-        </div> */}
-        {/* <div className="absolute z-50 left-68 top-3 w-56">{open && <CardMenu onClose={() => setOpen(false)} />}</div> */}
-
-        <Popover>
-          <PopoverTrigger>
-            {/* <div className="hidden z-50 right-[6px] self-center group-hover:block absolute"> */}
-            <button
-              onClick={() => setOpen(true)}
-              // variant="outline"
-              // size="icon"
-              className="flex h-5 p-0 w-6 bg-inherit hover:bg-neutral-200 relative border-none rounded-sm"
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="flex h-5 p-0 w-5 hover:bg-neutral-200 relative border-none rounded-md 
+              fill-current text-xs whitespace-nowrap overflow-hidden opacity-0 right-0 z-50 top-[0px] transition-opacity duration-200 ease-linear pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100"
             >
-              AA
-              {/* <div className="hidden  h-5 p-0 w-6 bg-inherit hover:bg-neutral-200 hover:block border-none rounded-sm">
-                <RxDotsHorizontal color="gray" size={15} className="self-center" />
-              </div> */}
-            </button>
-            {/* </div> */}
-          </PopoverTrigger>
-          <PopoverContent className="w-80">
-            <Cmd.Command>
-              <Cmd.CommandList>
-                <Cmd.CommandGroup heading="Suggestions">
-                  <Cmd.CommandItem className="">
-                    <Pencil2Icon className="mr-2 h-4 w-4" />
-                    <span>Edit</span>
-                  </Cmd.CommandItem>
-                  <Cmd.CommandItem>
-                    <TrashIcon className="mr-2 h-4 w-4" />
-                    <span>Delete</span>
-                  </Cmd.CommandItem>
-                </Cmd.CommandGroup>
-              </Cmd.CommandList>
-            </Cmd.Command>
-          </PopoverContent>
-        </Popover>
+              <RxDotsHorizontal color="gray" size={15} className="self-center" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="w-56">
+            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuGroup>
+              <DropdownMenuItem>
+                <User className="mr-2 h-4 w-4" />
+                <span>Profile</span>
+                <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <CreditCard className="mr-2 h-4 w-4" />
+                <span>Billing</span>
+                <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Settings className="mr-2 h-4 w-4" />
+                <span>Settings</span>
+                <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Keyboard className="mr-2 h-4 w-4" />
+                <span>Keyboard shortcuts</span>
+                <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+              </DropdownMenuItem>
+            </DropdownMenuGroup>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
     </Link>
   );
