@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { LuBell, LuPackage2 } from "react-icons/lu";
-import ContentAddPopover from "../../../components/ContentAddPopover";
+import InputPopover from "../../../components/InputPopover";
 import NavLink from "../navLink";
 import { getProjects } from "@/services/ProjectService/getProjects";
 
@@ -27,7 +27,7 @@ export default async function Sidebar() {
             {data.map(({ id, icon, title }) => (
               <NavLink key={title} href={id} projectId={id} title={title} icon={"goTasklist"} />
             ))}
-            <ContentAddPopover />
+            <InputPopover />
           </nav>
         </div>
       </div>
