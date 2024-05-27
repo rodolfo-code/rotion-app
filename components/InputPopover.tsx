@@ -26,7 +26,7 @@ export default function InputPopover() {
       <form action={createProject} id="add-project-form">
         <PopoverContent className="flex items-center h-10 p-0 pr-1 shadow-lg shadow-gray-400 ">
           <Input form="add-project-form" name="title" placeholder="New group" className="h-8 focus-visible:ring-gray-500 text-xs p-2 border-none" />
-          <PopoverClose>
+          <PopoverClose asChild>
             <Button form="add-project-form" type="submit" variant="outline" className="h-8  p-3 text-xs">
               Done
             </Button>

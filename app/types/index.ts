@@ -1,6 +1,10 @@
-// import { TagColors } from "@/utils/tagColors";
-
 import { TagColors } from "@/utils/TagColors";
+
+export interface ISession {
+  user: {
+    email: string;
+  };
+}
 
 export interface Projects {
   id: string;

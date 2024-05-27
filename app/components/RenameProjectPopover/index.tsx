@@ -6,18 +6,28 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Popover, PopoverClose, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
-import { createProject } from "@/services/ProjectService/createProject";
+import { useState } from "react";
 
 interface RenameProjectPopoverProps {
   children?: any;
-  shoudShowEditNameInput: any;
-  setShoudShowEditNameInput: any;
+  projectId: string;
+  shouldShowEditNameInput: any;
+  setShouldShowEditNameInput: any;
+  handleUpdateProject: any;
 }
 
-export default function RenameProjectPopover({ children, shoudShowEditNameInput, setShoudShowEditNameInput }: RenameProjectPopoverProps) {
+export default function RenameProjectPopover({
+  children,
+  projectId,
+  shouldShowEditNameInput,
+  setShouldShowEditNameInput,
+  handleUpdateProject,
+}: RenameProjectPopoverProps) {
+  const [change, setChange] = useState("");
+
   return (
     <div className="relative">
-      <Popover open={shoudShowEditNameInput}>
+      <Popover open={shouldShowEditNameInput} onOpenChange={setShouldShowEditNameInput}>
         <PopoverTrigger
           asChild
           className={clsx(
@@ -30,22 +40,22 @@ export default function RenameProjectPopover({ children, shoudShowEditNameInput,
           </span>
         </PopoverTrigger>
 
-        <form action={createProject} id="add-project-form" className="relative top-[600px]">
-          <PopoverContent className=" top-0 flex items-center h-10 p-0 pr-1 shadow-lg shadow-gray-400 ">
-            <Input form="add-project-form" name="title" placeholder="New group" className="h-8 focus-visible:ring-gray-500 text-xs p-2 border-none" />
-            <PopoverClose>
-              <Button
-                onClick={() => setShoudShowEditNameInput(false)}
-                form="add-project-form"
-                type="submit"
-                variant="outline"
-                className="h-8  p-3 text-xs"
-              >
-                Done
-              </Button>
-            </PopoverClose>
-          </PopoverContent>
-        </form>
+        {/* <form action={handleUpdateProject} id="update-project-form" className="relative top-[600px]"> */}
+        <PopoverContent className=" top-0 flex items-center h-10 p-0 pr-1 shadow-lg shadow-gray-400 ">
+          <Input
+            form="update-project-form"
+            name="title"
+            placeholder="New group"
+            className="h-8 focus-visible:ring-gray-500 text-xs p-2 border-none"
+            onChange={(e) => setChange(e.target.value)}
+          />
+          <PopoverClose onClick={() => handleUpdateProject(change)}>
+            <Button form="update-project-form" type="submit" variant="outline" className="h-8  p-3 text-xs">
+              Done
+            </Button>
+          </PopoverClose>
+        </PopoverContent>
+        {/* </form> */}
       </Popover>
     </div>
   );

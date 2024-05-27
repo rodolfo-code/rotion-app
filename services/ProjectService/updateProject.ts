@@ -1,5 +1,8 @@
+"use server";
+
 import { ProjectError } from "@/app/types";
 import api from "../axiosConfig";
+import { revalidatePath } from "next/cache";
 
 export async function updateProject(projectId: string, formData: FormData): Promise<void | ProjectError> {
   try {
@@ -14,4 +17,6 @@ export async function updateProject(projectId: string, formData: FormData): Prom
       error,
     };
   }
+
+  revalidatePath("/workspace");
 }

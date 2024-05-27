@@ -1,25 +1,58 @@
 {
+  "users": [
+    {
+      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
+      "user_name": "Rodolfo-dev",
+      "hashedPassword": "$2a$12$0W9b3e5r6XZz4KQ0wZ8z7uYpUJqGy3z2d4e5f6g7h8i9j0k1l2m3n",
+      "email": "rod.vgo@gmail.com",
+      "full_name": "Rodolfo Oliveira",
+      "profile_photo": "https://example.com/joao.jpg",
+      "is_active": true
+    },
+    {
+      "user_id": "b1c2d3e4-f5g6-7h8i-9j0k-1l2m3n4o5p6",
+      "user_name": "maria456",
+      "hashedPassword": "$2a$12$1X2y3Z4a5b6C7d8E9f0G1h2I3j4K5l6M7n8o9P",
+      "email": "maria@example.com",
+      "full_name": "Maria Souza",
+      "profile_photo": "https://example.com/maria.jpg",
+      "is_active": true
+    },
+    {
+      "user_id": "c1d2e3f4-g5h6-7i8j-9k0l-1m2n3o4p5q6",
+      "user_name": "ana789",
+      "hashedPassword": "$2a$12$2A3b4C5d6E7f8G9h0I1j2K3l4M5n6O7p8Q9r",
+      "email": "ana@example.com",
+      "full_name": "Ana Rodrigues",
+      "profile_photo": "https://example.com/ana.jpg",
+      "is_active": true
+    }
+  ],
   "projects": [
     {
-      "id": "f4238464-5a59-4960-a99a-01bd7ecb3970",
-      "title": "Integridade Corporativa",
-      "description": "Desenvolvimento dos formulario do portal integridade corporativa",
-      "emoji": ""
+      "title": "Frontend Integridade",
+      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
+      "description": null,
+      "icon": null,
+      "id": "f4238464-5a59-4960-a99a-01bd7ecb3970"
     },
     {
       "id": "374c345c-3c33-4763-bca2-edb76c2f86be",
+      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
       "title": "Backend integridade DDP",
       "description": "",
       "emoji": ""
     },
     {
       "id": "63adfee4-893b-40e1-8251-e049b79eb92b",
+      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
       "title": "Frontend BV",
       "description": "",
       "emoji": ""
     },
     {
       "id": "c390",
+      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
       "userId": null,
       "title": "Novo projeto",
       "description": "",
@@ -27,71 +60,23 @@
     },
     {
       "id": "455f",
+      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
       "userId": null,
       "title": "novo",
       "description": "",
       "icon": ""
     },
     {
-      "id": "f191",
-      "userId": null,
-      "title": "rodolfo",
-      "description": "",
-      "icon": ""
+      "title": "Oliveira",
+      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
+      "description": null,
+      "icon": null,
+      "id": "f191"
     },
     {
-      "id": "384e",
-      "userId": null,
-      "title": "",
-      "description": "",
-      "icon": ""
-    },
-    {
-      "id": "e746",
-      "userId": null,
-      "title": "new proj",
-      "description": "",
-      "icon": ""
-    },
-    {
-      "id": "e48d",
-      "userId": null,
-      "title": "novo",
-      "description": "",
-      "icon": ""
-    },
-    {
-      "id": "6051",
-      "userId": null,
-      "title": "mais um",
-      "description": "",
-      "icon": ""
-    },
-    {
-      "id": "d012",
-      "userId": null,
-      "title": "mais um",
-      "description": "",
-      "icon": ""
-    },
-    {
-      "id": "e3ba",
-      "userId": null,
-      "title": "Outro",
-      "description": "",
-      "icon": ""
-    },
-    {
-      "id": "e9d5",
-      "userId": null,
-      "title": "sdfsdhjnjksdfbh",
-      "description": "",
-      "icon": ""
-    },
-    {
-      "id": "bfdf",
-      "userId": null,
-      "title": "fdsgdsfhsfg",
+      "id": "e54a",
+      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
+      "title": "Rodolfinho",
       "description": "",
       "icon": ""
     }

@@ -1,16 +1,13 @@
-import React, { useState } from "react";
+"use client";
+
+import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
-import clsx from "clsx";
-import Link from "next/link";
+import { RocketIcon } from "lucide-react";
 import { usePathname } from "next/navigation";
 
-import { GoTasklist } from "react-icons/go";
-import { RxDotsHorizontal } from "react-icons/rx";
-
 import { EnvelopeClosedIcon, GearIcon, Pencil2Icon, PersonIcon, TrashIcon } from "@radix-ui/react-icons";
-
-import { Calendar, MoreHorizontal, RocketIcon, User } from "lucide-react";
+import { RxDotsHorizontal } from "react-icons/rx";
 
 import {
   Command,
@@ -33,9 +30,16 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { deleteProject } from "@/services/ProjectService/deleteProject";
+import { updateProject } from "@/services/ProjectService/updateProject";
 import RenameProjectPopover from "../RenameProjectPopover";
 
-export default function ProjectCommandMenu({ projectId, setShoudShowEditNameInput }: { projectId: string; setShoudShowEditNameInput?: any }) {
+interface ProjectCommandMenuProps {
+  projectId: string;
+  setShouldShowEditNameInput?: any;
+  shouldShowEditNameInput: any;
+}
+
+export default function ProjectCommandMenu({ projectId, setShouldShowEditNameInput, shouldShowEditNameInput }: ProjectCommandMenuProps) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   let currentRoute = pathname;
@@ -45,9 +49,28 @@ export default function ProjectCommandMenu({ projectId, setShoudShowEditNameInpu
     await deleteProject(id, shouldRedirect);
   }
 
+  async function handleUpdateProject(formData: any) {
+    const data = new FormData();
+    data.append("title", formData);
+
+    setShouldShowEditNameInput(false);
+    await updateProject(projectId, data);
+  }
+
+  if (shouldShowEditNameInput) {
+    return (
+      <RenameProjectPopover
+        shouldShowEditNameInput={shouldShowEditNameInput}
+        setShouldShowEditNameInput={setShouldShowEditNameInput}
+        projectId={currentRoute}
+        handleUpdateProject={handleUpdateProject}
+      />
+    );
+  }
+
   return (
     <div className="absolute z-50 top-1 right-1">
-      <DropdownMenu open={open} onOpenChange={setOpen}>
+      <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button
             variant="ghost"
@@ -55,22 +78,30 @@ export default function ProjectCommandMenu({ projectId, setShoudShowEditNameInpu
             className="flex h-5 p-0 w-5 hover:bg-neutral-200 relative border-none rounded-md 
               fill-current text-xs whitespace-nowrap overflow-hidden opacity-0 z-50 transition-opacity duration-200 ease-linear pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100"
           >
-            <MoreHorizontal />
+            <RxDotsHorizontal color="gray" size={15} className="self-center" />
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end" className="w-[200px]">
           <DropdownMenuLabel>Actions</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
-            <DropdownMenuItem onClick={() => setShoudShowEditNameInput(true)}>
-              <User className="mr-2 h-4 w-4" />
-              Assign to...
+            <DropdownMenuItem
+              onClick={() => {
+                setShouldShowEditNameInput(true);
+              }}
+            >
+              <Pencil2Icon className="mr-2 h-4 w-4" />
+              <span>Rename</span>
             </DropdownMenuItem>
-            <DropdownMenuItem>
-              <Calendar className="mr-2 h-4 w-4" />
-              Set due date...
+            <DropdownMenuItem onClick={() => handleDeleteProject(projectId)}>
+              <TrashIcon className="mr-2 h-4 w-4" />
+              <span>Delete</span>
             </DropdownMenuItem>
             <DropdownMenuSeparator />
+            <DropdownMenuItem>
+              <GearIcon className="mr-2 h-4 w-4" />
+              <span>Settings</span>
+            </DropdownMenuItem>
             {/* <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               <Tags className="mr-2 h-4 w-4" />
@@ -131,7 +162,7 @@ export default function ProjectCommandMenu({ projectId, setShoudShowEditNameInpu
               <CommandList>
                 <CommandEmpty>No results found.</CommandEmpty>
                 <CommandGroup heading="Suggestions">
-                  <CommandItem onSelect={() => setShoudShowEditNameInput(true)}>
+                  <CommandItem onSelect={() => setShouldShowEditNameInput(true)}>
                     <Pencil2Icon className="mr-2 h-4 w-4" />
                     <span>Rename</span>
                   </CommandItem>

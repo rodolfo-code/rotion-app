@@ -5,10 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { GoTasklist } from "react-icons/go";
 
-import ProjectCommandMenu from "../commandMenus/ProjectCommandMenu";
-import { Input } from "@/components/ui/input";
-import RenameProjectPopover from "../RenameProjectPopover";
 import { useState } from "react";
+import ProjectCommandMenu from "../commandMenus/ProjectCommandMenu";
 
 interface NavLinkProps {
   projectId: string;
@@ -22,7 +20,7 @@ let icons = {
 };
 
 export default function NavLink({ href, title, icon, projectId }: NavLinkProps) {
-  const [shoudShowEditNameInput, setShoudShowEditNameInput] = useState(false);
+  const [shouldShowEditNameInput, setShouldShowEditNameInput] = useState(false);
   const pathname = usePathname();
 
   const IconComponent = icons[icon];
@@ -46,9 +44,11 @@ export default function NavLink({ href, title, icon, projectId }: NavLinkProps) 
         </div>
       </Link>
 
-      <RenameProjectPopover shoudShowEditNameInput={shoudShowEditNameInput} setShoudShowEditNameInput={setShoudShowEditNameInput} />
-
-      <ProjectCommandMenu projectId={projectId} setShoudShowEditNameInput={setShoudShowEditNameInput} />
+      <ProjectCommandMenu
+        projectId={projectId}
+        setShouldShowEditNameInput={setShouldShowEditNameInput}
+        shouldShowEditNameInput={shouldShowEditNameInput}
+      />
     </div>
   );
 }
