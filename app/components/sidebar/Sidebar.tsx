@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { LuBell, LuPackage2 } from "react-icons/lu";
+
 import InputPopover from "../../../components/InputPopover";
 import NavLink from "../navLink";
-import { getProjects } from "@/services/ProjectService/getProjects";
 import getCurrentUser from "@/app/actions/getCurrentUser";
+import { getProjects } from "@/app/actions/getProjects";
 
 export default async function Sidebar() {
   const data = await getProjects();

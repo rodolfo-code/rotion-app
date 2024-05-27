@@ -31,54 +31,47 @@
   "projects": [
     {
       "title": "Frontend Integridade",
-      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
       "description": null,
       "icon": null,
       "id": "f4238464-5a59-4960-a99a-01bd7ecb3970"
     },
     {
       "id": "374c345c-3c33-4763-bca2-edb76c2f86be",
-      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
       "title": "Backend integridade DDP",
       "description": "",
       "emoji": ""
     },
     {
       "id": "63adfee4-893b-40e1-8251-e049b79eb92b",
-      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
       "title": "Frontend BV",
       "description": "",
       "emoji": ""
     },
     {
       "id": "c390",
-      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
-      "userId": null,
       "title": "Novo projeto",
       "description": "",
       "icon": ""
+    }
+  ],
+  "projectMembership": [
+    {
+      "id": "1",
+      "project_id": "f4238464-5a59-4960-a99a-01bd7ecb3970",
+      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
+      "role": "admin"
     },
     {
-      "id": "455f",
-      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
-      "userId": null,
-      "title": "novo",
-      "description": "",
-      "icon": ""
+      "id": "2",
+      "project_id": "f4238464-5a59-4960-a99a-01bd7ecb3970",
+      "user_id": "b1c2d3e4-f5g6-7h8i-9j0k-1l2m3n4o5p6",
+      "role": "editor"
     },
     {
-      "title": "Oliveira",
-      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
-      "description": null,
-      "icon": null,
-      "id": "f191"
-    },
-    {
-      "id": "e54a",
-      "user_id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
-      "title": "Rodolfinho",
-      "description": "",
-      "icon": ""
+      "id": "3",
+      "project_id": "f4238464-5a59-4960-a99a-01bd7ecb3970",
+      "user_id": "c1d2e3f4-g5h6-7i8j-9k0l-1m2n3o4p5q6",
+      "role": "viewer"
     }
   ],
   "columns": [

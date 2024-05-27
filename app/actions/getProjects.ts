@@ -1,6 +1,5 @@
-import api from "../axiosConfig";
-
 import { Projects } from "@/app/types";
+import api from "@/services/axiosConfig";
 
 async function getProjects(): Promise<Projects[] | []> {
   "use server";
