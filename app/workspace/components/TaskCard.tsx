@@ -28,8 +28,6 @@ export default function TaskCard(props: TaskCardTypes) {
     handleSetNewTask,
   } = props;
   const [text, setText] = useState("");
-  const [open, setOpen] = useState(false);
-  const [selectedStatus, setSelectedStatus] = useState<Status | null>(null);
 
   const textAreaRef = useRef<HTMLTextAreaElement>(null);
 

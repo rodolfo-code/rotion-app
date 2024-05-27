@@ -2,12 +2,17 @@
 
 import Link from "next/link";
 import { LuBell, LuPackage2 } from "react-icons/lu";
-import ContentAddPopover from "../../../components/ContentAddPopover";
+
+import InputPopover from "../../../components/InputPopover";
 import NavLink from "../navLink";
-import { getProjects } from "@/services/ProjectService/getProjects";
+import getCurrentUser from "@/app/actions/getCurrentUser";
+import { getProjects } from "@/app/actions/getProjects";
 
 export default async function Sidebar() {
   const data = await getProjects();
+
+  const currentUser = await getCurrentUser();
+  console.log("CURRENT", currentUser);
 
   return (
     <>
@@ -25,9 +30,9 @@ export default async function Sidebar() {
         <div className="flex-1 overflow-auto py-2">
           <nav className="grid items-start px-1.5 text-sm font-medium gap-px">
             {data.map(({ id, icon, title }) => (
-              <NavLink key={title} href={id} projectId={id} title={title} icon={"goTasklist"} />
+              <NavLink key={title + id} href={id} projectId={id} title={title} icon={"goTasklist"} />
             ))}
-            <ContentAddPopover />
+            <InputPopover />
           </nav>
         </div>
       </div>
