@@ -22,15 +22,23 @@ export interface Card {
   description: string;
 }
 
-export interface Board {
+export interface Column {
   title: string;
   // type: "todo" | "doing" | "paused" | "done" | "other";
   color: keyof typeof TagColors;
   creatable: boolean;
-  cards: Card[];
+  cards?: Card[];
 }
 
 export interface ProjectError {
   message: string;
   error: any;
+}
+
+export interface IBoardProps {
+  columns: Column[] | [];
+}
+
+export interface IParams {
+  projectId: string;
 }

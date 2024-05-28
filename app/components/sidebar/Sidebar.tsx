@@ -12,7 +12,6 @@ export default async function Sidebar() {
   const data = await getProjects();
 
   const currentUser = await getCurrentUser();
-  console.log("CURRENT", currentUser);
 
   return (
     <>
