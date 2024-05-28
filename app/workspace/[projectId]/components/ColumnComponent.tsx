@@ -3,16 +3,18 @@ import React, { ChangeEvent, useState } from "react";
 
 import { FiPlus } from "react-icons/fi";
 
-import TaskCard from "./TaskCard";
-import { Board, Card } from "@/app/types";
+// import TaskCard from "./TaskCard";
+import { Column, Card } from "@/app/types";
 import clsx from "clsx";
 import { TagColors } from "@/utils/TagColors";
 import { Button } from "@/components/ui/button";
 import { RxDotsHorizontal } from "react-icons/rx";
-import ColumnMenu from "./ColumnMenu";
+import ColumnMenu from "../../components/ColumnMenu";
+import TaskCard from "../../components/TaskCard";
+// import ColumnMenu from "./ColumnMenu";
 
-export default function ColumnComponent({ data: { cards, color, title } }: { data: Board }) {
-  const [taskCards, setTaskCards] = useState<Card[]>([...cards]);
+export default function ColumnComponent({ data: { cards, color, title } }: { data: Column }) {
+  const [taskCards, setTaskCards] = useState<Card[]>(!!cards ? [...cards] : []);
 
   function handleNewCard() {
     setTaskCards([
